@@ -1,0 +1,6 @@
+//Media queries
+@mixin breakpoint($value) {
+    @media (min-width: $value){
+        @content;
+    }
+}

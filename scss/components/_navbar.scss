@@ -1,0 +1,92 @@
+#navbar-container {
+    display: flex;
+    flex-direction: column;
+    background-color: $primary-color;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 3rem;
+    .nav-link {
+        color: $white-font;
+        font-size: 1.1rem;
+    }
+    #name-navbar {
+        color: $white-font;
+        font-size: 1.7rem;
+        font-family: $secondary-font;
+    }
+    #nav-mobile, #nav-desktop {
+        display: none;
+    }
+    .menu-open {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        a {
+            display: block;
+            padding: 15px;
+        }
+    }
+}
+
+#menu-hamb {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: none;
+    border: none;
+    transform: scale(0.6);
+    div {
+        background-color: $white-font;
+        margin-bottom: 6px;
+        width: 45px;
+        height: 7px;
+        border-radius: 3px;
+        transform-origin: 4px 0px;
+        transition: .7s ease;
+    }
+
+    div:first-child {
+        transform-origin: 0% 0%;
+    }
+    div:nth-last-child(2){
+        transform-origin: 0% 100%;
+    }
+}
+
+.cross {
+    div:first-child {
+        transform: rotate(45deg) translate(-2px, -1px);
+    }
+    div:nth-last-child(2) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    div:last-child {
+      transform: rotate(-45deg) translate(-5px, -4px);
+    }
+}
+
+//Media Query Tablet
+
+@include breakpoint(768px) {
+    #navbar-container {
+        flex-direction: row;
+        #nav-desktop {
+            display: block;
+            margin-left: auto;
+            a {
+                filter: brightness(100%);
+                &:nth-child(1) {
+                    margin-right: 20px;
+                }
+            }
+            a:hover {
+                filter: brightness(75%);
+            }
+        }
+    }
+    #menu-hamb{
+        display: none;
+    }
+}
