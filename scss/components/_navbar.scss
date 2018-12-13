@@ -5,7 +5,8 @@
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5rem 3rem;
+    padding: 1rem 3rem;
+    z-index: 99;
     .nav-link {
         color: $white-font;
         font-size: 1.1rem;

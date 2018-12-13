@@ -15,7 +15,8 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1.5rem 3rem; }
+  padding: 1rem 3rem;
+  z-index: 99; }
   #navbar-container .nav-link {
     color: #fff;
     font-size: 1.1rem; }
@@ -76,5 +77,33 @@ a {
 
   #menu-hamb {
     display: none; } }
+#header-bg {
+  background-image: url("../../images/header-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+  display: flex; }
+  #header-bg #header-text {
+    margin: auto;
+    color: #fff;
+    z-index: 1;
+    text-align: center; }
+    #header-bg #header-text h1 {
+      font-size: 3rem; }
+    #header-bg #header-text h2 {
+      font-size: 2rem; }
+
+#header-bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .5; }
 
 /*# sourceMappingURL=index.css.map */
