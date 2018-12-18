@@ -1,0 +1,32 @@
+[
+    {
+        "title": "CV-web",
+        "description": "Javascript challenge and last project of the bootcamp",
+        "urlImage": "/images/cv-web.jpg",
+        "alt": "Project image"
+    },
+    {
+        "title": "Netflix Clone",
+        "description": "A pixel perfect challenge creating copies of few Netflix mockups.",
+        "urlImage": "/images/netflix-clone.jpg",
+        "alt": "Netflix clone image"
+    },
+    {
+        "title": "Web Style Guide with Sass",
+        "description": "Project to practice sass",
+        "urlImage": "/images/sass-project.jpg",
+        "alt":"Project image"
+    },
+    {
+        "title": "Online Registration Form",
+        "description": "Responsive form",
+        "urlImage": "/images/form-project.jpg",
+        "alt":"Project image"
+    },
+    {
+        "title": "Responsive Layout",
+        "description": "Responsive Layout with floats",
+        "urlImage": "/images/floats-project.jpg",
+        "alt":"Project image"
+    }
+]
