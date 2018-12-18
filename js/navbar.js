@@ -1,15 +1,19 @@
 //Generate hamburger menu effect
-
-const hamburgerMenu = () => {
+function hamburgerMenu() {
     let divClass = document.querySelector('#menu-hamb');
+    let navbar = document.querySelector('#navbar-container');
+    let navbarMobile = document.querySelector('#nav-mobile');
+    
     if(divClass.className === 'cross') { 
         divClass.className = '';
-        document.querySelector('#nav-mobile').setAttribute('style', 'display: none;');
-        document.querySelector('#nav-mobile').className = '';
+        navbarMobile.setAttribute('style', 'display: none;');
+        navbarMobile.className = '';
+        document.documentElement.scrollTop < 50 ? navbar.setAttribute('style', 'background-color: transparent') : '';
     } else {
         divClass.className = 'cross';
-        document.querySelector('#nav-mobile').setAttribute('style', 'display: initial;');
-        document.querySelector('#nav-mobile').className = 'menu-open';
+        navbarMobile.setAttribute('style', 'display: initial;');
+        navbarMobile.className = 'menu-open';
+        document.documentElement.scrollTop < 50 ? navbar.setAttribute('style', 'background-color: #111') : '';
     };
 }
 
@@ -22,11 +26,10 @@ window.addEventListener('resize', () => {
 document.querySelector('#menu-hamb').addEventListener('click', hamburgerMenu);
 
 // Change navbar color on scroll
-
-const navbarColor = () => {
+function navbarColor() {
     let navbar = document.querySelector('#navbar-container');
     document.documentElement.scrollTop > 50 
     ? navbar.setAttribute('style', 'background-color: #111;') 
-    : navbar.setAttribute('style', 'color: transparent');
+    : navbar.setAttribute('style', 'background-color: transparent');
 }
 window.onscroll = navbarColor;

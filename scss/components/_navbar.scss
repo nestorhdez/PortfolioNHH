@@ -11,6 +11,7 @@
         font-size: 1.1rem;
     }
     #name-navbar {
+        width: 70px;
         color: $primary-font-color;
         font-size: 1.7rem;
         font-family: $secondary-font;
@@ -21,7 +22,7 @@
     .menu-open {
         width: 100%;
         text-align: center;
-        margin-top: 5px;
+        margin-top: 20px;
         a {
             display: block;
             padding: 15px;
@@ -31,7 +32,7 @@
 
 #menu-hamb {
     position: absolute;
-    top: 20px;
+    top: 14px;
     right: 25px;
     background: none;
     border: none;
@@ -88,13 +89,5 @@
     }
     #menu-hamb{
         display: none;
-    }
-}
-
-@include breakpoint(330px) {
-    #navbar-container {
-        .menu-open {
-            margin-top: 20px;
-        }
     }
 }
