@@ -1,7 +1,7 @@
 #navbar-container {
     display: flex;
     flex-direction: column;
-    background-color: $primary-color;
+    // background-color: $primary-color;
     position: fixed;
     top: 0;
     width: 100%;
@@ -22,7 +22,7 @@
     .menu-open {
         width: 100%;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 5px;
         a {
             display: block;
             padding: 15px;
@@ -89,5 +89,13 @@
     }
     #menu-hamb{
         display: none;
+    }
+}
+
+@include breakpoint(330px) {
+    #navbar-container {
+        .menu-open {
+            margin-top: 20px;
+        }
     }
 }

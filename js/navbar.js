@@ -20,3 +20,13 @@ window.addEventListener('resize', () => {
 });
 
 document.querySelector('#menu-hamb').addEventListener('click', hamburgerMenu);
+
+// Change navbar color on scroll
+
+const navbarColor = () => {
+    let navbar = document.querySelector('#navbar-container');
+    document.documentElement.scrollTop > 50 
+    ? navbar.setAttribute('style', 'background-color: #5394b3;') 
+    : navbar.setAttribute('style', 'color: transparent');
+}
+window.onscroll = navbarColor;
