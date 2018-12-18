@@ -1,18 +1,17 @@
 #navbar-container {
     display: flex;
     flex-direction: column;
-    // background-color: $primary-color;
     position: fixed;
     top: 0;
     width: 100%;
     padding: 1rem 3rem;
     z-index: 99;
     .nav-link {
-        color: $white-font;
+        color: $primary-font-color;
         font-size: 1.1rem;
     }
     #name-navbar {
-        color: $white-font;
+        color: $primary-font-color;
         font-size: 1.7rem;
         font-family: $secondary-font;
     }
@@ -38,7 +37,7 @@
     border: none;
     transform: scale(0.6);
     div {
-        background-color: $white-font;
+        background-color: $primary-font-color;
         margin-bottom: 6px;
         width: 45px;
         height: 7px;

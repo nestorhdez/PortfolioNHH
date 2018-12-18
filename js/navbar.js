@@ -26,7 +26,7 @@ document.querySelector('#menu-hamb').addEventListener('click', hamburgerMenu);
 const navbarColor = () => {
     let navbar = document.querySelector('#navbar-container');
     document.documentElement.scrollTop > 50 
-    ? navbar.setAttribute('style', 'background-color: #5394b3;') 
+    ? navbar.setAttribute('style', 'background-color: #111;') 
     : navbar.setAttribute('style', 'color: transparent');
 }
 window.onscroll = navbarColor;
