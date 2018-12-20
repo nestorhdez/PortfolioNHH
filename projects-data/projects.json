@@ -1,32 +1,123 @@
 [
     {
+        "id": "1",
         "title": "CV-web",
         "description": "Javascript challenge and last project of the bootcamp",
         "urlImage": "/images/cv-web.jpg",
-        "alt": "Project image"
+        "alt": "Project image",
+        "detailDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero optio reprehenderit nesciunt tempore, accusamus iure asperiores dignissimos soluta mollitia rem inventore, amet quis aut natus?",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "js"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/20H-Talent/CV-Web",
+            "web": "https://rawgit.com/20H-Talent/CV-Web/development/index.html"
+        },
+        "sections": [
+            {
+                "image": "../images/cv-web-landing-page.png",
+                "sectionDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsa rerum quod odit ducimus cumque quibusdam, dolorem quisquam optio eum eius, tenetur vitae iure error tempora dignissimos esse. Laudantium enim officia quia? Asperiores rerum, temporibus quaerat eius magnam modi voluptatem cum alias quisquam doloremque ullam quo architecto exercitationem dolore nobis!"
+            },
+            {
+                "image": "../images/cv-web-landing-page.png",
+                "sectionDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsa rerum quod odit ducimus cumque quibusdam, dolorem quisquam optio eum eius, tenetur vitae iure error tempora dignissimos esse. Laudantium enim officia quia? Asperiores rerum, temporibus quaerat eius magnam modi voluptatem cum alias quisquam doloremque ullam quo architecto exercitationem dolore nobis!"
+            },
+            {
+                "image": "../images/cv-web-landing-page.png",
+                "sectionDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsa rerum quod odit ducimus cumque quibusdam, dolorem quisquam optio eum eius, tenetur vitae iure error tempora dignissimos esse. Laudantium enim officia quia? Asperiores rerum, temporibus quaerat eius magnam modi voluptatem cum alias quisquam doloremque ullam quo architecto exercitationem dolore nobis!"
+            }
+        ]
     },
     {
+        "id": "2",
         "title": "Netflix Clone",
         "description": "A pixel perfect challenge creating copies of few Netflix mockups.",
         "urlImage": "/images/netflix-clone.jpg",
-        "alt": "Netflix clone image"
+        "alt": "Netflix clone image",
+        "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "sass"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-5-netflix-clone-html-css-nestorhdez",
+            "web": "https://rawgit.com/20H-Talent/ikigai-project-5-netflix-clone-html-css-nestorhdez/master/index.html"
+        },
+        "sections": [
+            {
+                "image": "",
+                "sectionDescription": ""
+            }
+        ]
     },
     {
+        "id": "3",
         "title": "Web Style Guide with Sass",
         "description": "Project to practice sass",
         "urlImage": "/images/sass-project.jpg",
-        "alt":"Project image"
+        "alt":"Project image",
+        "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "sass"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-4-nestor-cristian",
+            "web": "https://20h-talent.github.io/ikigai-project-4-nestor-cristian/"
+        },
+        "sections": [
+            {
+                "image": "",
+                "sectionDescription": ""
+            }
+        ]
     },
     {
+        "id": "4",
         "title": "Online Registration Form",
         "description": "Responsive form",
         "urlImage": "/images/form-project.jpg",
-        "alt":"Project image"
+        "alt":"Project image",
+        "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-3-nestorhdez",
+            "web": "https://20h-talent.github.io/ikigai-project-3-nestorhdez/"
+        },
+        "sections": [
+            {
+                "image": "",
+                "sectionDescription": ""
+            }
+        ]
     },
     {
+        "id": "5",
         "title": "Responsive Layout",
         "description": "Responsive Layout with floats",
         "urlImage": "/images/floats-project.jpg",
-        "alt":"Project image"
+        "alt":"Project image",
+        "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-2-project2-maria-nestor",
+            "web": "https://20h-talent.github.io/ikigai-project-2-project2-maria-nestor/"
+        },
+        "sections": [
+            {
+                "image": "",
+                "sectionDescription": ""
+            }
+        ]
     }
 ]

@@ -1,0 +1,38 @@
+#detail-description, #links-project-container {
+    margin: 40px;
+}
+
+#detail-description, #detail-description-title {
+    margin-bottom: 20px;
+}
+
+.skill-icon {
+    font-size: 2rem;
+    margin:10px;
+}
+
+#detail-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin: 100px 40px;
+    img {
+        width: 100%;
+    }
+}
+
+@include breakpoint(768px) {
+    #detail-container {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+        .image-section {
+            height: 90%;
+        }
+        .reverse-img {
+            grid-column: 2 / 3;
+        }
+        .reverse-text {
+            grid-column: 1 / 2;
+        }
+    }
+}

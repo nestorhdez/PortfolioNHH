@@ -29,7 +29,7 @@
         .img-overlay {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-around;
             opacity: 0;
             position: absolute;
             top: 0;
@@ -38,12 +38,18 @@
             background: rgba(0, 0, 0, .8);
             border-radius: 4px;
             transition: opacity .5s;
-            padding: 0 20px;
+            padding: 50px 20px 5px;
             .overlay-title, .overlay-description {
                 color: $primary-font-color;
             }
             .overlay-title {
                 margin-bottom: 10px;
+            }
+            .link-project {
+                width: 10%;
+                color: $primary-font-color;
+                align-self: flex-end;
+                font-size: 20px;
             }
         }
     }
@@ -60,7 +66,7 @@
         margin-left: 30px;
     }
      #projects-container {
-        grid-template-columns: repeat(auto-fill, minmax(344px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(379px, 1fr));
         .project-card {
             .project-img {
                 width: 100%;
