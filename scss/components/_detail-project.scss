@@ -1,0 +1,25 @@
+#detail-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin: 40px;
+    img {
+        width: 100%;
+    }
+}
+
+@include breakpoint(768px) {
+    #detail-container {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-flow: dense;
+        .image-section {
+            height: 90%;
+        }
+        .reverse-img {
+            grid-column: 2 / 3;
+        }
+        .reverse-text {
+            grid-column: 1 / 2;
+        }
+    }
+}

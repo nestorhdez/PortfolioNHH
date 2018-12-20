@@ -4,8 +4,11 @@ function htmlMiniatureProject(project) {
         <div class="project-card">
             <img class="project-img" src="${project.urlImage}" alt="${project.alt}">
             <div class="img-overlay">
-                <h1 class="overlay-title">${project.title}</h1>
-                <p class="overlay-description">${project.description}</p>
+                <div class="overlay-text">
+                    <h1 class="overlay-title">${project.title}</h1>
+                    <p class="overlay-description">${project.description}</p>
+                </div>
+                <a href="./html/project.html?id=${project.id}" class="link-project"><i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
     `);
