@@ -97,7 +97,8 @@ a {
     z-index: 1;
     text-align: center; }
     #header-bg #header-text h1 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      margin-bottom: 15px; }
     #header-bg #header-text h2 {
       font-size: 2rem; }
     #header-bg #header-text #detail-description {
