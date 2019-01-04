@@ -5,7 +5,16 @@
         "description": "Javascript challenge and last project of the bootcamp",
         "urlImage": "/images/cv-web.jpg",
         "alt": "Project image",
-        "detailDescription": "",
+        "detailDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero optio reprehenderit nesciunt tempore, accusamus iure asperiores dignissimos soluta mollitia rem inventore, amet quis aut natus?",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "js"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/20H-Talent/CV-Web",
+            "web": "https://rawgit.com/20H-Talent/CV-Web/development/index.html"
+        },
         "sections": [
             {
                 "image": "../images/cv-web-landing-page.png",
@@ -28,6 +37,15 @@
         "urlImage": "/images/netflix-clone.jpg",
         "alt": "Netflix clone image",
         "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "sass"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-5-netflix-clone-html-css-nestorhdez",
+            "web": "https://rawgit.com/20H-Talent/ikigai-project-5-netflix-clone-html-css-nestorhdez/master/index.html"
+        },
         "sections": [
             {
                 "image": "",
@@ -42,6 +60,15 @@
         "urlImage": "/images/sass-project.jpg",
         "alt":"Project image",
         "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "sass"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-4-nestor-cristian",
+            "web": "https://20h-talent.github.io/ikigai-project-4-nestor-cristian/"
+        },
         "sections": [
             {
                 "image": "",
@@ -56,6 +83,14 @@
         "urlImage": "/images/form-project.jpg",
         "alt":"Project image",
         "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-3-nestorhdez",
+            "web": "https://20h-talent.github.io/ikigai-project-3-nestorhdez/"
+        },
         "sections": [
             {
                 "image": "",
@@ -70,6 +105,14 @@
         "urlImage": "/images/floats-project.jpg",
         "alt":"Project image",
         "detailDescription": "",
+        "skills": [
+            "html5",
+            "css3-alt"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-2-project2-maria-nestor",
+            "web": "https://20h-talent.github.io/ikigai-project-2-project2-maria-nestor/"
+        },
         "sections": [
             {
                 "image": "",
