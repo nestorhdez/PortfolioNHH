@@ -97,7 +97,8 @@ a {
     z-index: 1;
     text-align: center; }
     #header-bg #header-text h1 {
-      font-size: 3rem; }
+      font-size: 3rem;
+      margin-bottom: 15px; }
     #header-bg #header-text h2 {
       font-size: 2rem; }
     #header-bg #header-text #detail-description {
@@ -191,13 +192,6 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(339px, 1fr)); }
     #about-container #about-text {
       grid-area: 1 / 2 / 1 / 4; } }
-<<<<<<< HEAD
-#detail-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
-  margin: 40px; }
-=======
 #detail-description, #links-project-container {
   margin: 40px; }
 
@@ -213,7 +207,6 @@ a {
   grid-template-columns: 1fr;
   grid-gap: 50px;
   margin: 100px 40px; }
->>>>>>> develop
   #detail-container img {
     width: 100%; }
 
