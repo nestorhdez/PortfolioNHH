@@ -2,10 +2,10 @@
     {
         "id": "1",
         "title": "CV-web",
-        "description": "Javascript challenge and last project of the bootcamp",
+        "description": "Javascript challenge and the last project of the bootcamp",
         "urlImage": "/images/cv-web.jpg",
         "alt": "Project image",
-        "detailDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero optio reprehenderit nesciunt tempore, accusamus iure asperiores dignissimos soluta mollitia rem inventore, amet quis aut natus?",
+        "detailDescription": "Last project made in the bootcamp 20H Talent. This is the implementation of everything learned to date with javascript, plus a test to strengthen teamwork with techniques such as scrum. The task assigned to my group, was to make a web application for desktop users with the aim of connecting people looking for employment in the world of web development with companies of the same. <br> Most of the time I spent doing tasks with javascript, although I also had some layout with bootstrap and css. <br><br> At the beginning of the project, I did the tasks of js writing in ES5 with global functions. As I was progressing in the bootcamp, I restructured the code to make it object oriented until I finally did it with ES6 classes.",
         "skills": [
             "html5",
             "css3-alt",
@@ -17,16 +17,26 @@
         },
         "sections": [
             {
-                "image": "../images/cv-web-landing-page.png",
-                "sectionDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsa rerum quod odit ducimus cumque quibusdam, dolorem quisquam optio eum eius, tenetur vitae iure error tempora dignissimos esse. Laudantium enim officia quia? Asperiores rerum, temporibus quaerat eius magnam modi voluptatem cum alias quisquam doloremque ullam quo architecto exercitationem dolore nobis!"
+                "image": "../images/user-cards.jpg",
+                "sectionTitle":"Users profiles",
+                "sectionSubtitle":"/js/render.js",
+                "sectionDescription": "My first task in this project was to make the user request to the api. Next, considering the asynchrony, I had to render cards with certain information of each of them. <br><br> On the other hand, when clicking on the detail button, he had to rewrite all the modal information that was in the HTML file with the one of the selected user. And when you click on the edit button, generate a form in the modal mode with the data already filled in by that user. Once clicked on accept, the process of collecting the data and making a request to the API to change them would be executed."
+            },
+            {
+                "image": "../images/user-search.jpg",
+                "sectionSubtitle":"/js/render.js",
+                "sectionDescription": "Using the advanced search form that had been designed by one of my colleagues, I had to perform the logic with javascript to be able to search for a user with any of the options that have been chosen. <br><br> Also generate, dynamically, the checkboxes of skills and languages both in the advanced search form and in the user edition form that I mentioned in the previous point."
             },
             {
                 "image": "../images/cv-web-landing-page.png",
-                "sectionDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsa rerum quod odit ducimus cumque quibusdam, dolorem quisquam optio eum eius, tenetur vitae iure error tempora dignissimos esse. Laudantium enim officia quia? Asperiores rerum, temporibus quaerat eius magnam modi voluptatem cum alias quisquam doloremque ullam quo architecto exercitationem dolore nobis!"
+                "sectionTitle":"Landing page",
+                "sectionDescription": "The next task would be to design and layout a landing page aimed at companies. This was the first time I had to design a whole page by myself, without the help of mockups. So, after looking at many landing pages on the internet, I opted to create something of simple design, and what I considered appropriate for the target audience of it. <br><br> Always following the general line of design of the project that we had agreed among the members of the group, using bootstrap components and making it responsive."
             },
             {
-                "image": "../images/cv-web-landing-page.png",
-                "sectionDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsa rerum quod odit ducimus cumque quibusdam, dolorem quisquam optio eum eius, tenetur vitae iure error tempora dignissimos esse. Laudantium enim officia quia? Asperiores rerum, temporibus quaerat eius magnam modi voluptatem cum alias quisquam doloremque ullam quo architecto exercitationem dolore nobis!"
+                "image": "../images/companies-cards.jpg",
+                "sectionTitle":"Companies profiles",
+                "sectionSubtitle":"/js/companies.js",
+                "sectionDescription": "In the final stretch of the project, we had to adapt the application to have a business tab similar to that of the users. <br><br> Although the behavior of this part of the application was similar to that of users, I decided to create a new code instead of adapting the one I had made in the other file. <br> I tried to put into practice everything I had learned from ES6 and make the code as dynamic as possible."
             }
         ]
     },
@@ -36,7 +46,7 @@
         "description": "A pixel perfect challenge creating copies of few Netflix mockups.",
         "urlImage": "/images/netflix-clone.jpg",
         "alt": "Netflix clone image",
-        "detailDescription": "",
+        "detailDescription": "A pixel-perfect challenge to test our knowledge in layout with html, css and sass in the 20htalent bootcamp. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
         "skills": [
             "html5",
             "css3-alt",
@@ -45,13 +55,7 @@
         "linksToProject": {
             "github": "https://github.com/nestorhdez/ikigai-project-5-netflix-clone-html-css-nestorhdez",
             "web": "https://rawgit.com/20H-Talent/ikigai-project-5-netflix-clone-html-css-nestorhdez/master/index.html"
-        },
-        "sections": [
-            {
-                "image": "",
-                "sectionDescription": ""
-            }
-        ]
+        }
     },
     {
         "id": "3",
@@ -59,7 +63,7 @@
         "description": "Project to practice sass",
         "urlImage": "/images/sass-project.jpg",
         "alt":"Project image",
-        "detailDescription": "",
+        "detailDescription": "First project carried out using the knowledge acquired in Sass. It is a mobile-first and responsive style guide.",
         "skills": [
             "html5",
             "css3-alt",
@@ -68,13 +72,7 @@
         "linksToProject": {
             "github": "https://github.com/nestorhdez/ikigai-project-4-nestor-cristian",
             "web": "https://20h-talent.github.io/ikigai-project-4-nestor-cristian/"
-        },
-        "sections": [
-            {
-                "image": "",
-                "sectionDescription": ""
-            }
-        ]
+        }
     },
     {
         "id": "4",
@@ -82,7 +80,7 @@
         "description": "Responsive form",
         "urlImage": "/images/form-project.jpg",
         "alt":"Project image",
-        "detailDescription": "",
+        "detailDescription": "Responsive and mobile-first project oriented to design a form with a basic design based on two mockup: mobile version and desktop version.",
         "skills": [
             "html5",
             "css3-alt"
@@ -90,13 +88,7 @@
         "linksToProject": {
             "github": "https://github.com/nestorhdez/ikigai-project-3-nestorhdez",
             "web": "https://20h-talent.github.io/ikigai-project-3-nestorhdez/"
-        },
-        "sections": [
-            {
-                "image": "",
-                "sectionDescription": ""
-            }
-        ]
+        }
     },
     {
         "id": "5",
@@ -104,7 +96,7 @@
         "description": "Responsive Layout with floats",
         "urlImage": "/images/floats-project.jpg",
         "alt":"Project image",
-        "detailDescription": "",
+        "detailDescription": "Project carried out with my partner María del bootcamp 20H Talent. The objective was to work, for the first time in the course, in pairs. In the first place we made the mobile layout in pair programming. From there each one was responsible for making the media queries of each version. In my case, I made the desktop version.",
         "skills": [
             "html5",
             "css3-alt"
@@ -112,12 +104,6 @@
         "linksToProject": {
             "github": "https://github.com/nestorhdez/ikigai-project-2-project2-maria-nestor",
             "web": "https://20h-talent.github.io/ikigai-project-2-project2-maria-nestor/"
-        },
-        "sections": [
-            {
-                "image": "",
-                "sectionDescription": ""
-            }
-        ]
+        }
     }
 ]

@@ -7,11 +7,13 @@ function filterProject(arrProjects) {
 
 function htmlProjectSection(section, index) {
     let template = (`
-        <div class="image-section${index%2 == 0 ? ' reverse-img' : ''}">
-            ${section.image ? `<img src="${section.image}" alt="Screenshot image">` : ""}
+        <div class="text-section${index%2 !== 0 ? ' reverse-text' : ''}">
+            ${section.sectionTitle ? `<h2>${section.sectionTitle}</h2>` : ''}
+            ${section.sectionSubtitle ? `<span class="section-subtitle">${section.sectionSubtitle}</span>` : ''}
+            ${section.sectionTitle || section.sectionSubtitle ? `<p class="section-description">${section.sectionDescription}</p>` : `<p>${section.sectionDescription}</p>`}
         </div>
-        <div class="text-section${index%2 == 0 ? ' reverse-text' : ''}">
-            <p>${section.sectionDescription}</p>
+        <div class="image-section${index%2 !== 0 ? ' reverse-img' : ''}">
+            ${section.image ? `<img src="${section.image}" alt="Screenshot image">` : ""}
         </div>
     `);
     return template;
@@ -43,9 +45,11 @@ function renderHtmlProject(project) {
     
     project.skills.forEach(skill => document.querySelector('#skills-container').innerHTML += htmlProjectSkills(skill));
 
-    project.sections.forEach((section, i) => {
-        document.querySelector('#detail-container').innerHTML += htmlProjectSection(section, i);
-    });
+    if(project.sections) {
+        project.sections.forEach((section, i) => {
+            document.querySelector('#detail-container').innerHTML += htmlProjectSection(section, i);
+        });
+    }
 
     document.querySelector('#links-project-container').innerHTML += htmlLinksProject(project);
 }
