@@ -5,7 +5,7 @@
         "description": "Javascript challenge and the last project of the bootcamp",
         "urlImage": "/images/cv-web.jpg",
         "alt": "Project image",
-        "detailDescription": "Last project made in the bootcamp 20H Talent. This is the implementation of everything learned to date with javascript, plus a test to strengthen teamwork with techniques such as scrum. The task assigned to my group, was to make a web application for desktop users with the aim of connecting people looking for employment in the world of web development with companies of the same. <br> Most of the time I spent doing tasks with javascript, although I also had some layout with bootstrap and css. <br><br> At the beginning of the project, I did the tasks of js writing in ES5 with global functions. As I was progressing in the bootcamp, I restructured the code to make it object oriented until I finally did it with ES6 classes.",
+        "detailDescription": "Last project made in the bootcamp 20H Talent. This is the implementation of everything learned to date with javascript, plus a test to strengthen teamwork with techniques such as scrum. The task assigned to my group, was to make a web application for desktop users with the aim of connecting people looking for employment in the world of web development with companies of the same. <br> Most of the time I spent doing tasks with javascript, although I also had some layout with bootstrap and css. <br><br> At the beginning of the project, I did the tasks of js writing in ES5 with global functions. As I was progressing in the bootcamp, I restructured the code to make it object oriented until I finally did it with ES6 classes. You can see how they were structured in Github: <br> <span class=\"section-subtitle\">/js/model.js, /js/features-model.js, /js/render.js and /js/companies.js (class Companies).</span>",
         "skills": [
             "html5",
             "css3-alt",
@@ -20,6 +20,8 @@
                 "image": "../images/user-cards.jpg",
                 "sectionTitle":"Users profiles",
                 "sectionSubtitle":"/js/render.js",
+                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search.html",
+                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/render.js",
                 "sectionDescription": "My first task in this project was to make the user request to the api. Next, considering the asynchrony, I had to render cards with certain information of each of them. <br><br> On the other hand, when clicking on the detail button, he had to rewrite all the modal information that was in the HTML file with the one of the selected user. And when you click on the edit button, generate a form in the modal mode with the data already filled in by that user. Once clicked on accept, the process of collecting the data and making a request to the API to change them would be executed."
             },
             {
@@ -30,12 +32,15 @@
             {
                 "image": "../images/cv-web-landing-page.png",
                 "sectionTitle":"Landing page",
+                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/landpage-comp.html",
                 "sectionDescription": "The next task would be to design and layout a landing page aimed at companies. This was the first time I had to design a whole page by myself, without the help of mockups. So, after looking at many landing pages on the internet, I opted to create something of simple design, and what I considered appropriate for the target audience of it. <br><br> Always following the general line of design of the project that we had agreed among the members of the group, using bootstrap components and making it responsive."
             },
             {
                 "image": "../images/companies-cards.jpg",
                 "sectionTitle":"Companies profiles",
-                "sectionSubtitle":"/js/companies.js",
+                "sectionSubtitle":"/js/companies.js (class Companies)",
+                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search-company.html",
+                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/companies.js",
                 "sectionDescription": "In the final stretch of the project, we had to adapt the application to have a business tab similar to that of the users. <br><br> Although the behavior of this part of the application was similar to that of users, I decided to create a new code instead of adapting the one I had made in the other file. <br> I tried to put into practice everything I had learned from ES6 and make the code as dynamic as possible."
             }
         ]

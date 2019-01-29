@@ -11,6 +11,11 @@
     margin:10px;
 }
 
+.section-link {
+    font-size: 18px;
+    margin: 5px 0px 0px 5px;
+}
+
 #detail-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -19,13 +24,13 @@
     img {
         width: 100%;
     }
-    .section-subtitle {
-        color: #414444;
-        font-family: monospace;
-    }
     .section-description {
         margin-top: 20px;
     }
+}
+.section-subtitle {
+    color: #414444;
+    font-family: monospace;
 }
 
 @include breakpoint(768px) {
