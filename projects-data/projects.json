@@ -110,5 +110,20 @@
             "github": "https://github.com/nestorhdez/ikigai-project-2-project2-maria-nestor",
             "web": "https://20h-talent.github.io/ikigai-project-2-project2-maria-nestor/"
         }
+    },
+    {
+        "id": "6",
+        "title": "FreeCodeCamp JS Certification",
+        "description": "JS Algorithms and Data Structures projects",
+        "urlImage": "/images/Freecode.png",
+        "alt":"Project image",
+        "detailDescription": "Projects of the FreeCodeCamp Algorithms and Data Structures certification.",
+        "skills": [
+            "js"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/Freecode-Algorithms",
+            "web": "https://nestorhdez.github.io/Freecode-Algorithms/"
+        }
     }
 ]
