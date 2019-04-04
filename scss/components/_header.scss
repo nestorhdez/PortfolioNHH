@@ -10,12 +10,11 @@
     display: flex;
     #header-text {
         margin: auto;
-        padding: 50px;
         color: $primary-font-color;
         z-index: 1;
         text-align: center;
         h1 {
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin-bottom: 15px;
         }
         h2 {
@@ -42,6 +41,9 @@
     #header-bg {
         #header-text {
             padding: 150px;
+            h1 {
+                font-size: 3rem;
+            }
         }
     }
 }
