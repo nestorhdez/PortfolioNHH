@@ -113,11 +113,12 @@
     },
     {
         "id": "6",
+        "order": -1,
         "title": "FreeCodeCamp JS Certification",
         "description": "JS Algorithms and Data Structures projects",
         "urlImage": "/images/Freecode.png",
         "alt":"Project image",
-        "detailDescription": "Projects of the FreeCodeCamp Algorithms and Data Structures certification.",
+        "detailDescription": "Basic layout created to can easily use the projects of the FreeCodeCamp JavaScript Algorithms and Data Structures certification.",
         "skills": [
             "js"
         ],
