@@ -114,17 +114,59 @@
     {
         "id": "6",
         "order": -1,
-        "title": "FreeCodeCamp JS Certification",
-        "description": "JS Algorithms and Data Structures projects",
+        "title": "Algorithms And Data Structures",
+        "description": "Javascript Algorithms And Data Structures Certification",
         "urlImage": "/images/Freecode.png",
         "alt":"Project image",
-        "detailDescription": "Basic layout created to can easily use the projects of the FreeCodeCamp JavaScript Algorithms and Data Structures certification.",
+        "detailDescription": "These are the five projects needed to obtain the <a class='link-underline' href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects' target='_blank'>FreeCodeCamp certification</a> of JavaScript Algorithms and Data Structures. All of them require a script that solves the problem posed. I also did a basic interface to be able to easily test some of them.",
         "skills": [
             "js"
         ],
         "linksToProject": {
             "github": "https://github.com/nestorhdez/Freecode-Algorithms",
             "web": "https://nestorhdez.github.io/Freecode-Algorithms/"
-        }
+        },
+        "sections": [
+            {
+                "image": "",
+                "sectionTitle":"Cash Register",
+                "sectionSubtitle":"projects/cash-register/cash-register.js",
+                "sectionWebLink": "",
+                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/cash-register/cash-register.js",
+                "sectionDescription": "The checkCashRegister function  accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument. Cid is a 2D array listing available currency. The function should return an object with a status key and a change key. The first thing I did was checking if the change due is greater than or equal to the total amount of money in the Cash register to return directly an object with the status \"Insufficient funds\" or \"Closed\" respectively. If the Cid (cash-in-drawer) is greater than the change due then the changeToReturn function is called, which test how much money of each currency unit is necessary to return the change."
+            },
+            {
+                "image": "",
+                "sectionTitle":"Caesars Cipher",
+                "sectionSubtitle":"projects/caesar/caesar.js",
+                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/caesar/caesar.html",
+                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/caesar/caesar.js",
+                "sectionDescription": "In this project I had to write a function which takes a <a class='link-underline' href='https://en.wikipedia.org/wiki/ROT13'>ROT13</a> encoded string as input and returns a decoded string. First I convert the string into an array that contains all the words. Then I turn each word into an array and compare each letter with its index in the alphabet to exchange it for the 13th letter after or before it."
+            },
+            {
+                "image": "",
+                "sectionTitle":"Roman Numeral Converter",
+                "sectionSubtitle":"projects/Roman/roman.js",
+                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/Roman/roman.html",
+                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/Roman/roman.js",
+                "sectionDescription": "In this challenge I had to convert the given number into a roman numeral. First I turn the number given in a 2D array to break it into Thousands, Hundreds, Tens and Ones. Then with the index, a switch statement and another 2D array where I keep the Roman characters I select the number that corresponds to each."
+            },
+            {
+                "image": "",
+                "sectionTitle":"Palindrome Checker",
+                "sectionSubtitle":"projects/palindrome/palindrome.js",
+                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/palindrome/palindrome.html",
+                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/palindrome/palindrome.js",
+                "sectionDescription": "It is about writing a function that returns true if the given string is a palindrome. Otherwise, it returns false. To solve it, only one function was necessary. First I remove all non-alphanumeric characters and turn everything into the same case. Then I check if the word backwards matches with the original."
+            },
+            {
+                "image": "",
+                "sectionTitle":"Telephone Number Validator",
+                "sectionSubtitle":"projects/phone/phone.js",
+                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/phone/phone.html",
+                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/phone/phone.js",
+                "sectionDescription": "This function should return true if the passed string looks like a valid US phone number. To check it you only need an if statement and use a regular expression."
+            }
+        ]
     }
 ]

@@ -13,9 +13,9 @@ function htmlProjectSection(section, index) {
             ${sectionLinks(section)}
             ${section.sectionTitle || section.sectionSubtitle ? `<p class="section-description">${section.sectionDescription}</p>` : `<p>${section.sectionDescription}</p>`}
         </div>
-        <div class="image-section${index%2 !== 0 ? ' reverse-img' : ''}">
+        ${section.image ? (`<div class="image-section${index%2 !== 0 ? ' reverse-img' : ''}">
             ${section.image ? `<img src="${section.image}" alt="Screenshot image">` : ""}
-        </div>
+        </div>`) : ''}
     `);
 }
 
@@ -45,7 +45,7 @@ function renderHtmlProject(project) {
     document.querySelector('#header-text').innerHTML +=
     `<h1 style="margin-bottom: 20px;">${project.title}</h1>` + '<div id="skills-container"></div>';
 
-    document.querySelector('#detail-description').innerHTML += project.detailDescription;
+    document.querySelector('#detail-description-container').innerHTML += '<p class="detail-description">' + project.detailDescription + '</p>';
     
     project.skills.forEach(skill => document.querySelector('#skills-container').innerHTML += htmlProjectSkills(skill));
 

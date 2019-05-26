@@ -12,6 +12,10 @@ a {
   text-decoration: none;
   color: #111; }
 
+p {
+  line-height: 1.6;
+  font-size: 0.95rem; }
+
 #navbar-container {
   display: flex;
   flex-direction: column;
@@ -193,10 +197,10 @@ a {
     grid-template-columns: repeat(auto-fill, minmax(339px, 1fr)); }
     #about-container #about-text {
       grid-area: 1 / 2 / 1 / 4; } }
-#detail-description, #links-project-container {
+#detail-description-container, #links-project-container {
   margin: 40px; }
 
-#detail-description, #detail-description-title {
+#detail-description-container, #detail-description-title {
   margin-bottom: 20px; }
 
 .skill-icon {
@@ -207,11 +211,14 @@ a {
   font-size: 18px;
   margin: 5px 0px 0px 5px; }
 
+.link-underline {
+  text-decoration: underline; }
+
 #detail-container {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 50px;
-  margin: 100px 40px; }
+  margin: 80px 40px; }
   #detail-container img {
     width: 100%; }
   #detail-container .section-description {
