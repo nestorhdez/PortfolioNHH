@@ -229,6 +229,9 @@ p {
   font-family: monospace; }
 
 @media (min-width: 768px) {
+  #detail-description-container, #links-project-container {
+    max-width: 50%; }
+
   #detail-container {
     grid-template-columns: 1fr 1fr;
     grid-auto-flow: dense; }
