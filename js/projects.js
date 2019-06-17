@@ -1,7 +1,7 @@
 //Generate projects cards
 function htmlMiniatureProject(project) {
     let miniature = (`
-        <div class="project-card" ${project.order ? `style= "order: ${project.order}"` : ''}>
+        <div class="project-card" onclick="" ${project.order ? `style= "order: ${project.order}"` : ''}>
             <img class="project-img" src="${project.urlImage}" alt="${project.alt}">
             <div class="img-overlay">
                 <div class="overlay-text">
