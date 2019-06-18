@@ -1,119 +1,31 @@
 [
     {
-        "id": "1",
-        "title": "CV-web",
-        "description": "Javascript challenge and the last project of the bootcamp",
-        "urlImage": "/images/cv-web.jpg",
-        "alt": "Project image",
-        "detailDescription": "Last project made in the bootcamp 20H Talent. This is the implementation of everything learned to date with javascript, plus a test to strengthen teamwork with techniques such as scrum. The task assigned to my group, was to make a web application for desktop users with the aim of connecting people looking for employment in the world of web development with companies of the same. <br> Most of the time I spent doing tasks with javascript, although I also had some layout with bootstrap and css. <br><br> At the beginning of the project, I did the tasks of js writing in ES5 with global functions. As I was progressing in the bootcamp, I restructured the code to make it object oriented until I finally did it with ES6 classes. You can see how they were structured in Github: <br> <span class=\"section-subtitle\">/js/model.js, /js/features-model.js, /js/render.js and /js/companies.js (class Companies).</span>",
+        "id": "7",
+        "title": "Front-end Libraries Certification",
+        "description": "Projects made with React for the Freecodecamp Front-end Libraries Certification",
+        "urlImage": "/images/libraries.jpg",
+        "alt":"Project image",
+        "detailDescription": "To achieve this certification you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment but I have also applied Scss.",
         "skills": [
-            "html5",
-            "css3-alt",
-            "js"
+            "react"
         ],
         "linksToProject": {
-            "github": "https://github.com/20H-Talent/CV-Web",
-            "web": "https://rawgit.com/20H-Talent/CV-Web/development/index.html"
+            "github": "https://github.com/nestorhdez/Freecode-Libraries",
+            "web": "https://nestorhdez.github.io/Freecode-Libraries/index.html"
         },
         "sections": [
             {
-                "image": "../images/user-cards.jpg",
-                "sectionTitle":"Users profiles",
-                "sectionSubtitle":"/js/render.js",
-                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search.html",
-                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/render.js",
-                "sectionDescription": "My first task in this project was to make the user request to the api. Next, considering the asynchrony, I had to render cards with certain information of each of them. <br><br> On the other hand, when clicking on the detail button, he had to rewrite all the modal information that was in the HTML file with the one of the selected user. And when you click on the edit button, generate a form in the modal mode with the data already filled in by that user. Once clicked on accept, the process of collecting the data and making a request to the API to change them would be executed."
-            },
-            {
-                "image": "../images/user-search.jpg",
-                "sectionSubtitle":"/js/render.js",
-                "sectionDescription": "Using the advanced search form that had been designed by one of my colleagues, I had to perform the logic with javascript to be able to search for a user with any of the options that have been chosen. <br><br> Also generate, dynamically, the checkboxes of skills and languages both in the advanced search form and in the user edition form that I mentioned in the previous point."
-            },
-            {
-                "image": "../images/cv-web-landing-page.png",
-                "sectionTitle":"Landing page",
-                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/landpage-comp.html",
-                "sectionDescription": "The next task would be to design and layout a landing page aimed at companies. This was the first time I had to design a whole page by myself, without the help of mockups. So, after looking at many landing pages on the internet, I opted to create something of simple design, and what I considered appropriate for the target audience of it. <br><br> Always following the general line of design of the project that we had agreed among the members of the group, using bootstrap components and making it responsive."
-            },
-            {
-                "image": "../images/companies-cards.jpg",
-                "sectionTitle":"Companies profiles",
-                "sectionSubtitle":"/js/companies.js (class Companies)",
-                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search-company.html",
-                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/companies.js",
-                "sectionDescription": "In the final stretch of the project, we had to adapt the application to have a business tab similar to that of the users. <br><br> Although the behavior of this part of the application was similar to that of users, I decided to create a new code instead of adapting the one I had made in the other file. <br> I tried to put into practice everything I had learned from ES6 and make the code as dynamic as possible."
+                "image": "/images/quote-machine.png",
+                "sectionTitle": "Random Quote Machine",
+                "sectionSubtitle": "Freecode-Libraries/projects/quote-machine/",
+                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Libraries/projects/quote-machine/quote.html",
+                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Libraries/tree/master/projects/quote-machine",
+                "sectionDescription": "This web app display a random quote and it's author. Clicking on the 'new quote' button allows you to see a different quote. And if you click on the Twitter icon it will open the twitter app with the current quote ready to tweet. <br><br> The app is composed of a React statefull component (quoteBox) and two stateless functional components (buttons). When the quoteBox component is mounted it fetch the json who has the list of quotes and save the result in a property of the class. Then set the states of the component with a random index, quote, author and color. Secondly, when the newQuote method is called by clicking the 'new quote' button, it change the states to set them to a new quote, author, etc. Finally, the Twitter icon button executes the openLink method with the url as an argument."
             }
         ]
     },
     {
-        "id": "2",
-        "title": "Netflix Clone",
-        "description": "A pixel perfect challenge creating copies of few Netflix mockups.",
-        "urlImage": "/images/netflix-clone.jpg",
-        "alt": "Netflix clone image",
-        "detailDescription": "A pixel-perfect challenge to test our knowledge in layout with html, css and sass in the 20htalent bootcamp. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
-        "skills": [
-            "html5",
-            "css3-alt",
-            "sass"
-        ],
-        "linksToProject": {
-            "github": "https://github.com/nestorhdez/ikigai-project-5-netflix-clone-html-css-nestorhdez",
-            "web": "https://rawgit.com/20H-Talent/ikigai-project-5-netflix-clone-html-css-nestorhdez/master/index.html"
-        }
-    },
-    {
-        "id": "3",
-        "title": "Web Style Guide with Sass",
-        "description": "Project to practice sass",
-        "urlImage": "/images/sass-project.jpg",
-        "alt":"Project image",
-        "detailDescription": "First project carried out using the knowledge acquired in Sass. It is a mobile-first and responsive style guide.",
-        "skills": [
-            "html5",
-            "css3-alt",
-            "sass"
-        ],
-        "linksToProject": {
-            "github": "https://github.com/nestorhdez/ikigai-project-4-nestor-cristian",
-            "web": "https://20h-talent.github.io/ikigai-project-4-nestor-cristian/"
-        }
-    },
-    {
-        "id": "4",
-        "title": "Online Registration Form",
-        "description": "Responsive form",
-        "urlImage": "/images/form-project.jpg",
-        "alt":"Project image",
-        "detailDescription": "Responsive and mobile-first project oriented to design a form with a basic design based on two mockup: mobile version and desktop version.",
-        "skills": [
-            "html5",
-            "css3-alt"
-        ],
-        "linksToProject": {
-            "github": "https://github.com/nestorhdez/ikigai-project-3-nestorhdez",
-            "web": "https://20h-talent.github.io/ikigai-project-3-nestorhdez/"
-        }
-    },
-    {
-        "id": "5",
-        "title": "Responsive Layout",
-        "description": "Responsive Layout with floats",
-        "urlImage": "/images/floats-project.jpg",
-        "alt":"Project image",
-        "detailDescription": "Project carried out with my partner María del bootcamp 20H Talent. The objective was to work, for the first time in the course, in pairs. In the first place we made the mobile layout in pair programming. From there each one was responsible for making the media queries of each version. In my case, I made the desktop version.",
-        "skills": [
-            "html5",
-            "css3-alt"
-        ],
-        "linksToProject": {
-            "github": "https://github.com/nestorhdez/ikigai-project-2-project2-maria-nestor",
-            "web": "https://20h-talent.github.io/ikigai-project-2-project2-maria-nestor/"
-        }
-    },
-    {
         "id": "6",
-        "order": -1,
         "title": "Algorithms And Data Structures",
         "description": "Javascript Algorithms And Data Structures Certification",
         "urlImage": "/images/Freecode.png",
@@ -168,5 +80,117 @@
                 "sectionDescription": "This function should return true if the passed string looks like a valid US phone number. To check it you only need an if statement and use a regular expression."
             }
         ]
+    },
+    {
+        "id": "5",
+        "title": "CV-web",
+        "description": "Javascript challenge and the last project of the bootcamp",
+        "urlImage": "/images/cv-web.jpg",
+        "alt": "Project image",
+        "detailDescription": "Last project made in the bootcamp 20H Talent. This is the implementation of everything learned to date with javascript, plus a test to strengthen teamwork with techniques such as scrum. The task assigned to my group, was to make a web application for desktop users with the aim of connecting people looking for employment in the world of web development with companies of the same. <br> Most of the time I spent doing tasks with javascript, although I also had some layout with bootstrap and css. <br><br> At the beginning of the project, I did the tasks of js writing in ES5 with global functions. As I was progressing in the bootcamp, I restructured the code to make it object oriented until I finally did it with ES6 classes. You can see how they were structured in Github: <br> <span class=\"section-subtitle\">/js/model.js, /js/features-model.js, /js/render.js and /js/companies.js (class Companies).</span>",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "js"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/20H-Talent/CV-Web",
+            "web": "https://rawgit.com/20H-Talent/CV-Web/development/index.html"
+        },
+        "sections": [
+            {
+                "image": "../images/user-cards.jpg",
+                "sectionTitle":"Users profiles",
+                "sectionSubtitle":"/js/render.js",
+                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search.html",
+                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/render.js",
+                "sectionDescription": "My first task in this project was to make the user request to the api. Next, considering the asynchrony, I had to render cards with certain information of each of them. <br><br> On the other hand, when clicking on the detail button, he had to rewrite all the modal information that was in the HTML file with the one of the selected user. And when you click on the edit button, generate a form in the modal mode with the data already filled in by that user. Once clicked on accept, the process of collecting the data and making a request to the API to change them would be executed."
+            },
+            {
+                "image": "../images/user-search.jpg",
+                "sectionSubtitle":"/js/render.js",
+                "sectionDescription": "Using the advanced search form that had been designed by one of my colleagues, I had to perform the logic with javascript to be able to search for a user with any of the options that have been chosen. <br><br> Also generate, dynamically, the checkboxes of skills and languages both in the advanced search form and in the user edition form that I mentioned in the previous point."
+            },
+            {
+                "image": "../images/cv-web-landing-page.png",
+                "sectionTitle":"Landing page",
+                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/landpage-comp.html",
+                "sectionDescription": "The next task would be to design and layout a landing page aimed at companies. This was the first time I had to design a whole page by myself, without the help of mockups. So, after looking at many landing pages on the internet, I opted to create something of simple design, and what I considered appropriate for the target audience of it. <br><br> Always following the general line of design of the project that we had agreed among the members of the group, using bootstrap components and making it responsive."
+            },
+            {
+                "image": "../images/companies-cards.jpg",
+                "sectionTitle":"Companies profiles",
+                "sectionSubtitle":"/js/companies.js (class Companies)",
+                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search-company.html",
+                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/companies.js",
+                "sectionDescription": "In the final stretch of the project, we had to adapt the application to have a business tab similar to that of the users. <br><br> Although the behavior of this part of the application was similar to that of users, I decided to create a new code instead of adapting the one I had made in the other file. <br> I tried to put into practice everything I had learned from ES6 and make the code as dynamic as possible."
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "title": "Netflix Clone",
+        "description": "A pixel perfect challenge creating copies of few Netflix mockups.",
+        "urlImage": "/images/netflix-clone.jpg",
+        "alt": "Netflix clone image",
+        "detailDescription": "A pixel-perfect challenge to test our knowledge in layout with html, css and sass in the 20htalent bootcamp. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "sass"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-5-netflix-clone-html-css-nestorhdez",
+            "web": "https://rawgit.com/20H-Talent/ikigai-project-5-netflix-clone-html-css-nestorhdez/master/index.html"
+        }
+    },
+    {
+        "id": "3",
+        "title": "Web Style Guide with Sass",
+        "description": "Project to practice sass",
+        "urlImage": "/images/sass-project.jpg",
+        "alt":"Project image",
+        "detailDescription": "First project carried out using the knowledge acquired in Sass. It is a mobile-first and responsive style guide.",
+        "skills": [
+            "html5",
+            "css3-alt",
+            "sass"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-4-nestor-cristian",
+            "web": "https://20h-talent.github.io/ikigai-project-4-nestor-cristian/"
+        }
+    },
+    {
+        "id": "2",
+        "title": "Online Registration Form",
+        "description": "Responsive form",
+        "urlImage": "/images/form-project.jpg",
+        "alt":"Project image",
+        "detailDescription": "Responsive and mobile-first project oriented to design a form with a basic design based on two mockup: mobile version and desktop version.",
+        "skills": [
+            "html5",
+            "css3-alt"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-3-nestorhdez",
+            "web": "https://20h-talent.github.io/ikigai-project-3-nestorhdez/"
+        }
+    },
+    {
+        "id": "1",
+        "title": "Responsive Layout",
+        "description": "Responsive Layout with floats",
+        "urlImage": "/images/floats-project.jpg",
+        "alt":"Project image",
+        "detailDescription": "Project carried out with my partner María del bootcamp 20H Talent. The objective was to work, for the first time in the course, in pairs. In the first place we made the mobile layout in pair programming. From there each one was responsible for making the media queries of each version. In my case, I made the desktop version.",
+        "skills": [
+            "html5",
+            "css3-alt"
+        ],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/ikigai-project-2-project2-maria-nestor",
+            "web": "https://20h-talent.github.io/ikigai-project-2-project2-maria-nestor/"
+        }
     }
 ]
