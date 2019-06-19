@@ -29,7 +29,7 @@
         .img-overlay {
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: center;
             opacity: 0;
             position: absolute;
             top: 0;
@@ -38,18 +38,21 @@
             background: rgba(0, 0, 0, .8);
             border-radius: 4px;
             transition: opacity .5s;
-            padding: 50px 20px 5px;
-            .overlay-title, .overlay-description {
-                color: $primary-font-color;
-            }
-            .overlay-title {
-                margin-bottom: 10px;
+            .overlay-text {
+                margin: 13px;
+                .overlay-title, .overlay-description {
+                    color: $primary-font-color;
+                }
+                .overlay-title {
+                    margin-bottom: 10px;
+                }
             }
             .link-project {
-                width: 10%;
+                position: absolute;
+                bottom: 15px;
+                right: 20px;
                 color: $primary-font-color;
-                align-self: flex-end;
-                font-size: 20px;
+                font-size: 1.25rem;
             }
         }
     }

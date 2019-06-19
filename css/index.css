@@ -148,7 +148,7 @@ p {
     #projects-container .project-card .img-overlay {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
       opacity: 0;
       position: absolute;
       top: 0;
@@ -156,17 +156,19 @@ p {
       height: 100%;
       background: rgba(0, 0, 0, 0.8);
       border-radius: 4px;
-      transition: opacity .5s;
-      padding: 50px 20px 5px; }
-      #projects-container .project-card .img-overlay .overlay-title, #projects-container .project-card .img-overlay .overlay-description {
-        color: #fff; }
-      #projects-container .project-card .img-overlay .overlay-title {
-        margin-bottom: 10px; }
+      transition: opacity .5s; }
+      #projects-container .project-card .img-overlay .overlay-text {
+        margin: 13px; }
+        #projects-container .project-card .img-overlay .overlay-text .overlay-title, #projects-container .project-card .img-overlay .overlay-text .overlay-description {
+          color: #fff; }
+        #projects-container .project-card .img-overlay .overlay-text .overlay-title {
+          margin-bottom: 10px; }
       #projects-container .project-card .img-overlay .link-project {
-        width: 10%;
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
         color: #fff;
-        align-self: flex-end;
-        font-size: 20px; }
+        font-size: 1.25rem; }
   #projects-container .project-card:hover .img-overlay {
     opacity: 1; }
 
