@@ -144,28 +144,27 @@ p {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      opacity: 0;
       position: absolute;
-      top: 0;
+      top: 60%;
       width: 100%;
-      height: 100%;
+      height: 40%;
       background: rgba(0, 0, 0, 0.8);
-      border-radius: 4px;
-      transition: opacity .5s; }
+      border-radius: 4px; }
       #projects-container .project-card .img-overlay .overlay-text {
         margin: 20px; }
         #projects-container .project-card .img-overlay .overlay-text .overlay-title, #projects-container .project-card .img-overlay .overlay-text .overlay-description {
           color: #fff; }
         #projects-container .project-card .img-overlay .overlay-text .overlay-title {
-          margin-bottom: 10px; }
+          font-size: 1.3rem;
+          margin: 0; }
+        #projects-container .project-card .img-overlay .overlay-text .overlay-description {
+          display: none; }
       #projects-container .project-card .img-overlay .link-project {
         position: absolute;
         bottom: 15px;
         right: 20px;
         color: #fff;
         font-size: 1.25rem; }
-  #projects-container .project-card:hover .img-overlay {
-    opacity: 1; }
 
 @media (min-width: 768px) {
   #projects-title, #about-title {
@@ -173,7 +172,22 @@ p {
     margin-left: 30px; }
 
   #projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); } }
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); }
+
+  #projects-container .project-card .img-overlay .overlay-text .overlay-title {
+    font-size: 1.5rem; } }
+@media (hover: hover) {
+  #projects-container .project-card .img-overlay {
+    top: 0;
+    height: 100%;
+    opacity: 0;
+    transition: opacity .5s; }
+    #projects-container .project-card .img-overlay .overlay-text .overlay-title {
+      margin-bottom: 10px; }
+    #projects-container .project-card .img-overlay .overlay-text .overlay-description {
+      display: block; }
+  #projects-container .project-card:hover .img-overlay {
+    opacity: 1; } }
 #about-container {
   margin: 70px 50px 150px;
   display: grid;
