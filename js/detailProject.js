@@ -19,9 +19,18 @@ function htmlProjectSection(section, index) {
     `);
 }
 
+const skillsColors = {
+    html5: "#ec4a20",
+    "css3-alt": "#3f84c2",
+    sass: "#c66394",
+    js: "#f7df1f",
+    react: "#63d7ff"
+
+}
+
 function htmlProjectSkills(string) {
     return (`
-        <i class="skill-icon fab fa-${string}"></i>
+        <i class="skill-icon fab fa-${string}" style="color: ${skillsColors[string]}"></i>
     `);
 }
 
@@ -43,7 +52,7 @@ function renderHtmlProject(project) {
     document.documentElement.style.setProperty('--opacity-header', '0.8');
     document.querySelector('#header-bg').style.setProperty('background-image', `url(${project.urlImage})`);
     document.querySelector('#header-text').innerHTML +=
-    `<h1 style="margin-bottom: 20px;">${project.title}</h1>` + '<div id="skills-container"></div>';
+    `<h1 style="text-align: center;">${project.title}</h1>` + '<div id="skills-container" style="text-align: center;"></div>';
 
     document.querySelector('#detail-description-container').innerHTML += '<p class="detail-description">' + project.detailDescription + '</p>';
     
