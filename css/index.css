@@ -24,7 +24,7 @@ p {
   width: 100%;
   padding: 1rem 3rem;
   z-index: 99; }
-  #navbar-container .nav-link {
+  #navbar-container .nav-link, #navbar-container .nav-link-mobile {
     color: #fff;
     font-size: 1.1rem; }
   #navbar-container #name-navbar {
