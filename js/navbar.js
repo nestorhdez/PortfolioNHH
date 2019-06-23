@@ -24,6 +24,7 @@ window.addEventListener('resize', () => {
 });
 
 document.querySelector('#menu-hamb').addEventListener('click', hamburgerMenu);
+document.querySelectorAll('.nav-link').forEach(link => link.addEventListener('click', hamburgerMenu));
 
 // Change navbar color on scroll
 function navbarColor() {
