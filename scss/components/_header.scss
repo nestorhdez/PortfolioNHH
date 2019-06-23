@@ -10,15 +10,14 @@
     display: flex;
     #header-text {
         margin: auto;
+        padding: 20px;
         color: $primary-font-color;
         z-index: 1;
-        text-align: center;
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 15px;
+            font-size: 2.2rem;
         }
-        h2 {
-            font-size: 2rem;
+        h1:first-child {
+            margin-bottom: 10px;
         }
         #detail-description {
             text-align: left;
@@ -39,11 +38,8 @@
 
 @include breakpoint(768px) {
     #header-bg {
-        #header-text {
-            padding: 150px;
-            h1 {
-                font-size: 3rem;
-            }
+        h1 {
+            font-size: 3rem;
         }
     }
 }

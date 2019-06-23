@@ -96,14 +96,13 @@ p {
   display: flex; }
   #header-bg #header-text {
     margin: auto;
+    padding: 20px;
     color: #fff;
-    z-index: 1;
-    text-align: center; }
+    z-index: 1; }
     #header-bg #header-text h1 {
-      font-size: 2.5rem;
-      margin-bottom: 15px; }
-    #header-bg #header-text h2 {
-      font-size: 2rem; }
+      font-size: 2.2rem; }
+    #header-bg #header-text h1:first-child {
+      margin-bottom: 10px; }
     #header-bg #header-text #detail-description {
       text-align: left; }
 
@@ -118,10 +117,8 @@ p {
   opacity: var(--opacity-header); }
 
 @media (min-width: 768px) {
-  #header-bg #header-text {
-    padding: 150px; }
-    #header-bg #header-text h1 {
-      font-size: 3rem; } }
+  #header-bg h1 {
+    font-size: 3rem; } }
 #projects-title, #about-title {
   text-align: center;
   margin-top: 100px; }
