@@ -37,7 +37,8 @@
             background: rgba(0, 0, 0, .8);
             border-radius: 4px;
             .overlay-text {
-                margin: 20px;
+                margin-left: 30px;
+                margin-right: 55px;
                 .overlay-title, .overlay-description {
                     color: $primary-font-color;
                 }
@@ -47,6 +48,7 @@
                 }
                 .overlay-description {
                     display: none;
+                    font-size: 1rem;
                 }
             }
             .link-project {
@@ -69,9 +71,6 @@
      #projects-container {
         grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
     }
-    #projects-container .project-card .img-overlay .overlay-text .overlay-title {
-        font-size: 1.5rem;
-    }
 }
 
 @media (hover: hover) {
@@ -85,6 +84,7 @@
                 .overlay-text {
                     .overlay-title {
                         margin-bottom: 10px;
+                        font-size: 2rem;
                     }
                     .overlay-description {
                         display: block;

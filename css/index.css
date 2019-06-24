@@ -173,14 +173,16 @@ p {
       background: rgba(0, 0, 0, 0.8);
       border-radius: 4px; }
       #projects-container .project-card .img-overlay .overlay-text {
-        margin: 20px; }
+        margin-left: 30px;
+        margin-right: 55px; }
         #projects-container .project-card .img-overlay .overlay-text .overlay-title, #projects-container .project-card .img-overlay .overlay-text .overlay-description {
           color: #fff; }
         #projects-container .project-card .img-overlay .overlay-text .overlay-title {
           font-size: 1.3rem;
           margin: 0; }
         #projects-container .project-card .img-overlay .overlay-text .overlay-description {
-          display: none; }
+          display: none;
+          font-size: 1rem; }
       #projects-container .project-card .img-overlay .link-project {
         position: absolute;
         bottom: 15px;
@@ -194,10 +196,7 @@ p {
     margin-left: 30px; }
 
   #projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); }
-
-  #projects-container .project-card .img-overlay .overlay-text .overlay-title {
-    font-size: 1.5rem; } }
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); } }
 @media (hover: hover) {
   #projects-container .project-card .img-overlay {
     top: 0;
@@ -205,7 +204,8 @@ p {
     opacity: 0;
     transition: opacity .5s; }
     #projects-container .project-card .img-overlay .overlay-text .overlay-title {
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      font-size: 2rem; }
     #projects-container .project-card .img-overlay .overlay-text .overlay-description {
       display: block; }
   #projects-container .project-card:hover .img-overlay {
