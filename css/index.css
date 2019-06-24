@@ -211,7 +211,8 @@ p {
   #projects-container .project-card:hover .img-overlay {
     opacity: 1; } }
 #about-container {
-  margin: 70px 50px 150px;
+  padding: 0 35px;
+  margin: 70px 0 150px;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 30px;
@@ -221,6 +222,9 @@ p {
     width: 250px;
     height: 250px;
     border-radius: 50%; }
+  #about-container #about-text {
+    letter-spacing: 0.1px;
+    font-size: 1.08rem; }
 
 @media (min-width: 768px) {
   #about-container {
