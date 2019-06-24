@@ -10,14 +10,14 @@
     display: flex;
     #header-text {
         margin: auto;
-        padding: 20px;
+        padding: 0 35px;
         color: $primary-font-color;
         z-index: 1;
-        h1 {
-            font-size: 2.2rem;
+        p {
+            font-size: 1.4rem;
         }
-        h1:first-child {
-            margin-bottom: 10px;
+        h1 {
+            font-size: 2.4rem;
         }
     }
 }
@@ -31,6 +31,30 @@
     height: 100%;
     background-color: black;
     opacity: var(--opacity-header);
+}
+
+#title-index {
+    position: relative;
+    animation-name: name;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+#subtitle-index {
+    position: relative;
+    animation-name: title;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+}
+
+@keyframes name {
+    from {bottom: 1000px;}
+    to {bottom: 0;}
+}
+
+@keyframes title {
+    from {top: 1000px;}
+    to {top: 0;}
 }
 
 @include breakpoint(768px) {
