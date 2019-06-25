@@ -128,14 +128,22 @@ p {
 
 @keyframes name {
   from {
-    bottom: 1000px; }
+    bottom: 500px; }
   to {
-    bottom: 0; } }
+    bottom: 0; }
+  8% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
 @keyframes title {
   from {
-    top: 1000px; }
+    top: 500px; }
   to {
-    top: 0; } }
+    top: 0; }
+  8% {
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
 @media (min-width: 768px) {
   #header-bg h1 {
     font-size: 3rem; } }
