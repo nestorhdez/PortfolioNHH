@@ -19,6 +19,6 @@ function renderProjects(array) {
     array.forEach(project => document.querySelector('#projects-container').innerHTML += htmlMiniatureProject(project));
 }
 
-fetch('./projects-data/projects.json')
+fetch('./json/projects.json')
 .then((res) => res.json())
 .then((res) => renderProjects(res));

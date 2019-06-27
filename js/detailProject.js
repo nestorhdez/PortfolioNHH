@@ -67,6 +67,6 @@ function renderHtmlProject(project) {
     document.querySelector('#links-project-container').innerHTML += htmlLinksProject(project);
 }
 
-fetch('../projects-data/projects.json')
+fetch('../json/projects.json')
 .then(res => res.json())
 .then(res => renderHtmlProject(filterProject(res)));

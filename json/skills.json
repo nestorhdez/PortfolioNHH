@@ -1,0 +1,34 @@
+[
+    {
+        "skill": "html5-plain colored",
+        "title": "HTML5"
+    },
+    {
+        "skill": "css3-plain colored",
+        "title": "CSS3"
+    },
+    {
+        "skill": "sass-original colored",
+        "title": "SASS"
+    },
+    {
+        "skill": "bootstrap-plain colored",
+        "title": "BOOTSTRAP"
+    },
+    {
+        "skill": "javascript-plain colored",
+        "title": "JAVASCRIPT"
+    },
+    {
+        "skill": "jquery-plain colored",
+        "title": "JQUERY"
+    },
+    {
+        "skill": "git-plain colored",
+        "title": "GIT"
+    },
+    {
+        "skill": "react-original colored",
+        "title": "REACT (In process)"
+    }
+]
