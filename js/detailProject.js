@@ -30,14 +30,14 @@ const skillsColors = {
 
 function htmlProjectSkills(string) {
     return (`
-        <i class="skill-icon fab fa-${string}" style="color: ${skillsColors[string]}"></i>
+        <i class="project-icon fab fa-${string}" style="color: ${skillsColors[string]}"></i>
     `);
 }
 
 function htmlLinksProject(project) {
     return (`
-       ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" target="_blank"><i class="skill-icon fab fa-github"></i></a>` : null}
-       ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" target="_blank"><i class="skill-icon fas fa-link"></i></a>` : null}
+       ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" target="_blank"><i class="project-icon fab fa-github"></i></a>` : null}
+       ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" target="_blank"><i class="project-icon fas fa-link"></i></a>` : null}
     `);
 }
 
@@ -52,11 +52,11 @@ function renderHtmlProject(project) {
     document.documentElement.style.setProperty('--opacity-header', '0.8');
     document.querySelector('#header-bg').style.setProperty('background-image', `url(${project.urlImage})`);
     document.querySelector('#header-text').innerHTML +=
-    `<h1 style="text-align: center;">${project.title}</h1>` + '<div id="skills-container" style="text-align: center;"></div>';
+    `<h1 style="text-align: center;">${project.title}</h1>` + '<div id="skills-project-container" style="text-align: center;"></div>';
 
     document.querySelector('#detail-description-container').innerHTML += '<p class="detail-description">' + project.detailDescription + '</p>';
     
-    project.skills.forEach(skill => document.querySelector('#skills-container').innerHTML += htmlProjectSkills(skill));
+    project.skills.forEach(skill => document.querySelector('#skills-project-container').innerHTML += htmlProjectSkills(skill));
 
     if(project.sections) {
         project.sections.forEach((section, i) => {
