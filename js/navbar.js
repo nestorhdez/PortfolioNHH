@@ -29,8 +29,12 @@ document.querySelectorAll('.nav-link-mobile').forEach(link => link.addEventListe
 // Change navbar color on scroll
 function navbarColor() {
     let navbar = document.querySelector('#navbar-container');
-    document.documentElement.scrollTop > 50 
-    ? navbar.setAttribute('style', 'background-color: #111;') 
-    : navbar.setAttribute('style', 'background-color: transparent');
+    if(document.documentElement.scrollTop > 50){
+        navbar.setAttribute('style', 'background-color: #111;')
+    }else {
+        if(document.querySelector('#menu-hamb').className === ''){
+            navbar.setAttribute('style', 'background-color: transparent');
+        }
+    }
 }
 window.onscroll = navbarColor;
