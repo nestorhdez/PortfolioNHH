@@ -6,21 +6,21 @@ function hamburgerMenu() {
     
     if(divClass.className === 'cross') { 
         divClass.className = '';
-        navbarMobile.setAttribute('style', 'display: none;');
-        navbarMobile.className = '';
+        navbar.className = 'menu-animation-close';
         document.documentElement.scrollTop < 50 ? navbar.setAttribute('style', 'background-color: transparent') : '';
     } else {
         divClass.className = 'cross';
         navbarMobile.setAttribute('style', 'display: initial;');
-        navbarMobile.className = 'menu-open';
+        navbar.className = 'menu-animation-open';
         document.documentElement.scrollTop < 50 ? navbar.setAttribute('style', 'background-color: #111') : '';
     };
 }
 
 window.addEventListener('resize', () => {
-    window.innerWidth >= 768 
-    ? document.querySelector('#nav-mobile').setAttribute('style', 'display: none;')
-    : document.querySelector('#menu-hamb').className = '';
+    if(window.innerWidth >= 768){
+        document.querySelector('#nav-mobile').setAttribute('style', 'display: none;');
+        document.querySelector('#menu-hamb').className = '';
+    }
 });
 
 document.querySelector('#menu-hamb').addEventListener('click', hamburgerMenu);
