@@ -314,9 +314,11 @@ main {
 #detail-description-container, #detail-description-title {
   margin-bottom: 20px; }
 
-.project-icon {
-  font-size: 2rem;
-  margin: 10px; }
+#skills-project-container {
+  margin-top: 14px; }
+  #skills-project-container .project-icon {
+    font-size: 2rem;
+    margin: 10px; }
 
 .section-link {
   font-size: 18px;

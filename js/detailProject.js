@@ -19,18 +19,9 @@ function htmlProjectSection(section, index) {
     `);
 }
 
-const skillsColors = {
-    html5: "#ec4a20",
-    "css3-alt": "#3f84c2",
-    sass: "#c66394",
-    js: "#f7df1f",
-    react: "#63d7ff"
-
-}
-
 function htmlProjectSkills(string) {
     return (`
-        <i class="project-icon fab fa-${string}" style="color: ${skillsColors[string]}"></i>
+        <i class="project-icon devicon-${string}"></i>
     `);
 }
 
