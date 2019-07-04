@@ -1,3 +1,8 @@
+main {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .title {
     font-size: 2rem;
     text-align: center;
@@ -6,7 +11,7 @@
 
 // Projects //
 #projects-container {
-    margin: 70px 30px 0;
+    margin-top: 70px;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
@@ -67,10 +72,19 @@
 @include breakpoint(768px) {
     .title {
         text-align: left;
-        margin-left: 30px;
     }
-     #projects-container {
+    #projects-container {
         grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    }
+}
+@include breakpoint(1900px) {
+    #projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(355px, 1fr));
+    }
+}
+@include breakpoint(2500px) {
+    #projects-container {
+        grid-template-columns: repeat(auto-fill, minmax(490px, 1fr));
     }
 }
 
@@ -103,16 +117,16 @@
 
 //Skills
 #skills-container {
-    margin-top: 70px;
-    padding: 0 70px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    grid-gap: 30px;
-    justify-items: center;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     .skill-div {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 20px;
+        width: 140px;
         .skill-icon {
             width: 100px;
             height: 100px;
@@ -131,13 +145,20 @@
     }
 }
 
+@include breakpoint(768px) {
+    #skills-container {
+        justify-content: flex-start;
+        .skill-div {
+            margin-right: 10px;
+        }
+    }
+}
+
 //About me//
 #about-container {
-    padding: 0 35px;
     margin: 70px 0 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     #profile-img {
         width: 250px;
@@ -158,7 +179,7 @@
             max-width: 600px;
             order: -1;
             margin: 0;
-            margin-right: 30px;
+            margin-right: 50px;
         }
     }
 }
