@@ -316,9 +316,11 @@ p {
 
 #skills-project-container {
   margin-top: 14px; }
-  #skills-project-container .project-icon {
-    font-size: 2rem;
-    margin: 10px; }
+
+.project-icon {
+  font-size: 2rem;
+  margin-top: 10px;
+  margin-right: 10px; }
 
 .section-link {
   font-size: 18px;
