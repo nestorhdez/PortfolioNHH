@@ -37,24 +37,20 @@
             flex-direction: column;
             justify-content: center;
             position: absolute;
-            top: 60%;
+            top: 40%;
             width: 100%;
-            height: 40%;
+            height: 60%;
             background: rgba(0, 0, 0, .8);
             border-radius: 4px;
+            padding: 0 10px;
             .overlay-text {
-                margin-left: 30px;
-                margin-right: 55px;
-                .overlay-title, .overlay-description {
+                text-align: center;
+                .overlay-title {
                     color: $primary-font-color;
                 }
                 .overlay-title {
                     font-size: 1.3rem;
                     margin: 0;
-                }
-                .overlay-description {
-                    display: none;
-                    font-size: 1rem;
                 }
             }
             .link-project {
@@ -66,7 +62,13 @@
             }
         }
     }
-    
+}
+.thumbnail-skills-container {
+    margin-top: 10px;
+}
+.thumbnail-icon {
+    font-size: 1.6rem;
+    margin: 5px;
 }
 
 @include breakpoint(768px) {
@@ -100,9 +102,6 @@
                     .overlay-title {
                         margin-bottom: 10px;
                         font-size: 2rem;
-                    }
-                    .overlay-description {
-                        display: block;
                     }
                 }    
             }
