@@ -8,7 +8,7 @@ function filterProject(arrProjects) {
 function htmlProjectSection(section, index) {
     return (`
         <div class="text-section${index%2 !== 0 ? ' reverse-text' : ''}">
-            ${section.sectionTitle ? `<h2>${section.sectionTitle}</h2>` : ''}
+            ${section.sectionTitle ? `<h3 class="section-title">${section.sectionTitle}</h3>` : ''}
             ${section.sectionSubtitle ? `<span class="section-subtitle">${section.sectionSubtitle}</span>` : ''}
             ${sectionLinks(section)}
             ${section.sectionTitle || section.sectionSubtitle ? `<p class="section-description">${section.sectionDescription}</p>` : `<p>${section.sectionDescription}</p>`}
@@ -50,8 +50,9 @@ function renderHtmlProject(project) {
     project.skills.forEach(skill => document.querySelector('#skills-project-container').innerHTML += htmlProjectSkills(skill));
 
     if(project.sections) {
+        document.querySelector('#detail-explanation-container').insertAdjacentHTML('afterbegin', '<h2 id="detail-explanation-title" class="detail-title">Detailed explanation</h2>')
         project.sections.forEach((section, i) => {
-            document.querySelector('#detail-container').innerHTML += htmlProjectSection(section, i);
+            document.querySelector('#sections-container').innerHTML += htmlProjectSection(section, i);
         });
     }
 

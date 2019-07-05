@@ -1,19 +1,50 @@
-#detail-description-container, #links-project-container {
-    margin: 40px;
-}
-
-#detail-description-container, #detail-description-title {
-    margin-bottom: 20px;
-}
 #skills-project-container {
     margin-top: 14px;
 }
+
 .project-icon {
     font-size: 2rem;
     margin-top: 10px;
     margin-right:10px;
 }
 
+.detail-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#detail-main-container {
+    width: 80%;
+    margin: 0 auto 70px;
+}
+
+#detail-description-container, #detail-explanation-title {
+    margin-top: 70px;
+}
+#links-project-container {
+    margin-top: 50px;
+}
+
+#sections-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 50px;
+    margin-bottom: 80px;
+    img {
+        width: 100%;
+    }
+    .section-description {
+        margin-top: 20px;
+    }
+}
+.section-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+.section-subtitle {
+    color: #414444;
+    font-family: monospace;
+}
 .section-link {
     font-size: 18px;
     margin: 5px 0px 0px 5px;
@@ -23,28 +54,14 @@
     text-decoration: underline;
 }
 
-#detail-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 50px;
-    margin: 80px 40px;
-    img {
-        width: 100%;
-    }
-    .section-description {
-        margin-top: 20px;
-    }
-}
-.section-subtitle {
-    color: #414444;
-    font-family: monospace;
-}
-
 @include breakpoint(768px) {
     #detail-description-container, #links-project-container {
         max-width: 50%;
     }
-    #detail-container {
+    #detail-explanation-title {
+        margin-bottom: 40px;
+    }
+    #sections-container {
         grid-template-columns: 1fr 1fr;
         grid-auto-flow: dense;
         .image-section {

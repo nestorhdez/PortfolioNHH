@@ -5,7 +5,7 @@ function htmlMiniatureProject(project) {
             <img class="project-img" src="${project.urlImage}" alt="${project.alt}">
             <div class="img-overlay">
                 <div class="overlay-text">
-                    <h1 class="overlay-title">${project.title}</h1>
+                    <h3 class="overlay-title">${project.title}</h3>
                     <p class="overlay-description">${project.description}</p>
                 </div>
                 <a href="./html/project.html?id=${project.id}" class="link-project"><i class="fas fa-arrow-right"></i></a>
