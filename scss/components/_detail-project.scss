@@ -25,6 +25,10 @@
     margin-top: 50px;
 }
 
+#detail-explanation-container {
+    display: none;
+}
+
 #sections-container {
     display: grid;
     grid-template-columns: 1fr;
