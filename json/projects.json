@@ -21,6 +21,14 @@
                 "sectionWebLink": "https://nestorhdez.github.io/Freecode-Libraries/projects/quote-machine/quote.html",
                 "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Libraries/tree/master/projects/quote-machine",
                 "sectionDescription": "This web app display a random quote and it's author. Clicking on the 'new quote' button allows you to see a different quote. And if you click on the Twitter icon it will open the twitter app with the current quote ready to tweet. <br><br> The app is composed of a React statefull component (quoteBox) and two stateless functional components (buttons). When the quoteBox component is mounted it fetch the json who has the list of quotes and save the result in a property of the class. Then set the states of the component with a random index, quote, author and color. Secondly, when the newQuote method is called by clicking the 'new quote' button, it change the states to set them to a new quote, author, etc. Finally, the Twitter icon button executes the openLink method with the url as an argument."
+            },
+            {
+                "image": "/images/markdown-previewer.png",
+                "sectionTitle": "Markdown Previewer",
+                "sectionSubtitle": "Freecode-Libraries/projects/markdown-previewer/",
+                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Libraries/projects/markdown-previewer/index.html",
+                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Libraries/tree/master/projects/markdown-previewer",
+                "sectionDescription": "While markdown is entered into the \"editor\" container, the text is rendered as html in the \"preview\" container."
             }
         ]
     },
