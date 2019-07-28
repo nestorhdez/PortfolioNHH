@@ -54,7 +54,7 @@
         "urlImage": "/images/libraries/libraries.jpg",
         "images": ["/images/libraries/libraries.jpg", "/images/libraries/quote-machine.png", "/images/libraries/markdown-previewer.png"],
         "alt":"Project image",
-        "detailDescription": "To achieve this certification you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment but I have also applied Scss.",
+        "detailDescription": "To achieve this <a class=\"link-underline\" target='_blank' href=\"https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/\">certification</a> you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment. <br><br> The first project, random quote machine, has to fetch a phrase and its author asynchronously. You have the option to generate a new phrase or tweet the current one. <br><br> The Markdown previewer must print the text written as markdown in the editor container as html in the preview container.",
         "skills": [
             "react-original colored"
         ],
@@ -88,7 +88,7 @@
         "urlImage": "/images/algorithms/Freecode.png",
         "images": ["/images/algorithms/Freecode.png", "/images/algorithms/palindrome.png", "/images/algorithms/roman.png", "/images/algorithms/caesar.png", "/images/algorithms/phone.png"],
         "alt":"Project image",
-        "detailDescription": "These are the five projects needed to obtain the <a class='link-underline' href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects' target='_blank'>FreeCodeCamp certification</a> of JavaScript Algorithms and Data Structures. All of them require a script that solves the problem posed. I also did a basic interface to be able to easily test some of them.",
+        "detailDescription": "These are the five projects needed to obtain the <a class='link-underline' href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects' target='_blank'>FreeCodeCamp certification</a> of JavaScript Algorithms and Data Structures. I also did a basic interface to be able to easily test some of them. <br><br> The only one that has no visual interface is the Cash Register project. It consists of design a function that accepts purchase price as the first argument, payment as the second, and cash-in-drawer (2D array listing available currency) as the third. Then, the function should always return an object with a status key with the state of the cash register as the value and a change key with the change due as the value.",
         "skills": [
             "javascript-plain colored"
         ],
