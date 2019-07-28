@@ -2,11 +2,8 @@
     {
         "id": "6",
         "title": "Curriculum management",
-        "description": "Javascript challenge and the last project of the bootcamp",
-        "urlImage": "/images/cv/cv-web.jpg",
+        "description": "Group project carried out with git flow and scrum as keys for the organization. The goal was to make a web with the aim of manage curriculums of people and companies. <br> The tasks I did were the following: <br><br> Both, in the profiles and companies pages, I made the request to the API and considering the asynchrony I had to render cards with certain information. Then, depending where do you click you can open a modal with all the information of the profile, edit or delete it. <br><br> Another task was to made the logic to be able to search by filtering the profiles according to the filled inputs.<br><br>Finally, I had to make a landing page for potential interested companies. <br><br>  You can see the code made by me on Github: <br> <span class=\"section-subtitle\"><a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/model.js\">/js/model.js<a/>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/features-model.js\">/js/features-model.js</a>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/render.js\">/js/render.js</a> and <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/companies.js\">/js/companies.js</a> (class Companies).</span>",
         "images": ["/images/cv/cv-web.jpg", "/images/cv/user-modal.png", "/images/cv/user-edit.png", "/images/cv/company-modal.png", "/images/cv/company-edit.png", "/images/cv/cv-web-landing-page.png"],
-        "alt": "Project image",
-        "detailDescription": "Group project carried out with git flow and scrum as keys for the organization. The goal was to make a web with the aim of manage curriculums of people and companies. <br> The tasks I did were the following: <br><br> Both, in the profiles and companies pages, I made the request to the API and considering the asynchrony I had to render cards with certain information. Then, depending where do you click you can open a modal with all the information of the profile, edit or delete it. <br><br> Another task was to made the logic to be able to search by filtering the profiles according to the filled inputs.<br><br>Finally, I had to make a landing page for potential interested companies. <br><br>  You can see the code made by me on Github: <br> <span class=\"section-subtitle\"><a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/model.js\">/js/model.js<a/>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/features-model.js\">/js/features-model.js</a>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/render.js\">/js/render.js</a> and <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/companies.js\">/js/companies.js</a> (class Companies).</span>",
         "skills": [
             "html5-plain colored",
             "bootstrap-plain colored",
@@ -16,137 +13,39 @@
         "linksToProject": {
             "github": "https://github.com/nestorhdez/CV-Web",
             "web": "https://nestorhdez.github.io/CV-Web/"
-        },
-        "sections": [
-            {
-                "image": "../images/user-cards.jpg",
-                "sectionTitle":"Users profiles",
-                "sectionSubtitle":"/js/render.js",
-                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search.html",
-                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/render.js",
-                "sectionDescription": "My first task in this project was to make the user request to the api. Next, considering the asynchrony, I had to render cards with certain information of each of them. <br><br> On the other hand, when clicking on the detail button, he had to rewrite all the modal information that was in the HTML file with the one of the selected user. And when you click on the edit button, generate a form in the modal mode with the data already filled in by that user. Once clicked on accept, the process of collecting the data and making a request to the API to change them would be executed."
-            },
-            {
-                "image": "../images/user-search.jpg",
-                "sectionSubtitle":"/js/render.js",
-                "sectionDescription": "Using the advanced search form that had been designed by one of my colleagues, I had to perform the logic with javascript to be able to search for a user with any of the options that have been chosen. <br><br> Also generate, dynamically, the checkboxes of skills and languages both in the advanced search form and in the user edition form that I mentioned in the previous point."
-            },
-            {
-                "image": "../images/cv-web-landing-page.png",
-                "sectionTitle":"Landing page",
-                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/landpage-comp.html",
-                "sectionDescription": "The next task would be to design and layout a landing page aimed at companies. This was the first time I had to design a whole page by myself, without the help of mockups. So, after looking at many landing pages on the internet, I opted to create something of simple design, and what I considered appropriate for the target audience of it. <br><br> Always following the general line of design of the project that we had agreed among the members of the group, using bootstrap components and making it responsive."
-            },
-            {
-                "image": "../images/companies-cards.jpg",
-                "sectionTitle":"Companies profiles",
-                "sectionSubtitle":"/js/companies.js (class Companies)",
-                "sectionWebLink": "https://rawgit.com/20H-Talent/CV-Web/development/html/search-company.html",
-                "sectionGithubLink": "https://github.com/20H-Talent/CV-Web/blob/master/js/companies.js",
-                "sectionDescription": "In the final stretch of the project, we had to adapt the application to have a business tab similar to that of the users. <br><br> Although the behavior of this part of the application was similar to that of users, I decided to create a new code instead of adapting the one I had made in the other file. <br> I tried to put into practice everything I had learned from ES6 and make the code as dynamic as possible."
-            }
-        ]
+        }
     }
     ,{
         "id": "5",
         "title": "Front-end Libraries Certification",
-        "description": "Projects made with React for the Freecodecamp Front-end Libraries Certification",
-        "urlImage": "/images/libraries/libraries.jpg",
+        "description": "To achieve this <a class=\"link-underline\" target='_blank' href=\"https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/\">certification</a> you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment. <br><br> The first project, random quote machine, has to fetch a phrase and its author asynchronously. You have the option to generate a new phrase or tweet the current one. <br><br> The Markdown previewer must print the text written as markdown in the editor container as html in the preview container.",
         "images": ["/images/libraries/libraries.jpg", "/images/libraries/quote-machine.png", "/images/libraries/markdown-previewer.png"],
-        "alt":"Project image",
-        "detailDescription": "To achieve this <a class=\"link-underline\" target='_blank' href=\"https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/\">certification</a> you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment. <br><br> The first project, random quote machine, has to fetch a phrase and its author asynchronously. You have the option to generate a new phrase or tweet the current one. <br><br> The Markdown previewer must print the text written as markdown in the editor container as html in the preview container.",
         "skills": [
             "react-original colored"
         ],
         "linksToProject": {
             "github": "https://github.com/nestorhdez/Freecode-Libraries",
             "web": "https://nestorhdez.github.io/Freecode-Libraries/index.html"
-        },
-        "sections": [
-            {
-                "image": "/images/quote-machine.png",
-                "sectionTitle": "Random Quote Machine",
-                "sectionSubtitle": "Freecode-Libraries/projects/quote-machine/",
-                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Libraries/projects/quote-machine/quote.html",
-                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Libraries/tree/master/projects/quote-machine",
-                "sectionDescription": "This web app display a random quote and it's author. Clicking on the 'new quote' button allows you to see a different quote. And if you click on the Twitter icon it will open the twitter app with the current quote ready to tweet. <br><br> The app is composed of a React statefull component (quoteBox) and two stateless functional components (buttons). When the quoteBox component is mounted it fetch the json who has the list of quotes and save the result in a property of the class. Then set the states of the component with a random index, quote, author and color. Secondly, when the newQuote method is called by clicking the 'new quote' button, it change the states to set them to a new quote, author, etc. Finally, the Twitter icon button executes the openLink method with the url as an argument."
-            },
-            {
-                "image": "/images/markdown-previewer.png",
-                "sectionTitle": "Markdown Previewer",
-                "sectionSubtitle": "Freecode-Libraries/projects/markdown-previewer/",
-                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Libraries/projects/markdown-previewer/index.html",
-                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Libraries/tree/master/projects/markdown-previewer",
-                "sectionDescription": "While markdown is entered into the \"editor\" container, the text is rendered as html in the \"preview\" container."
-            }
-        ]
+        }
     },
     {
         "id": "4",
         "title": "Algorithms And Data Structures",
-        "description": "Javascript Algorithms And Data Structures Certification",
-        "urlImage": "/images/algorithms/Freecode.png",
+        "description": "These are the five projects needed to obtain the <a class='link-underline' href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects' target='_blank'>FreeCodeCamp certification</a> of JavaScript Algorithms and Data Structures. I also did a basic interface to be able to easily test some of them. <br><br> The only one that has no visual interface is the Cash Register project. It consists of design a function that accepts purchase price as the first argument, payment as the second, and cash-in-drawer (2D array listing available currency) as the third. Then, the function should always return an object with a status key with the state of the cash register as the value and a change key with the change due as the value.",
         "images": ["/images/algorithms/Freecode.png", "/images/algorithms/palindrome.png", "/images/algorithms/roman.png", "/images/algorithms/caesar.png", "/images/algorithms/phone.png"],
-        "alt":"Project image",
-        "detailDescription": "These are the five projects needed to obtain the <a class='link-underline' href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects' target='_blank'>FreeCodeCamp certification</a> of JavaScript Algorithms and Data Structures. I also did a basic interface to be able to easily test some of them. <br><br> The only one that has no visual interface is the Cash Register project. It consists of design a function that accepts purchase price as the first argument, payment as the second, and cash-in-drawer (2D array listing available currency) as the third. Then, the function should always return an object with a status key with the state of the cash register as the value and a change key with the change due as the value.",
         "skills": [
             "javascript-plain colored"
         ],
         "linksToProject": {
             "github": "https://github.com/nestorhdez/Freecode-Algorithms",
             "web": "https://nestorhdez.github.io/Freecode-Algorithms/"
-        },
-        "sections": [
-            {
-                "image": "",
-                "sectionTitle":"Cash Register",
-                "sectionSubtitle":"projects/cash-register/cash-register.js",
-                "sectionWebLink": "",
-                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/cash-register/cash-register.js",
-                "sectionDescription": "The checkCashRegister function  accepts purchase price as the first argument (price), payment as the second argument (cash), and cash-in-drawer (cid) as the third argument. Cid is a 2D array listing available currency. The function should return an object with a status key and a change key. The first thing I did was checking if the change due is greater than or equal to the total amount of money in the Cash register to return directly an object with the status \"Insufficient funds\" or \"Closed\" respectively. If the Cid (cash-in-drawer) is greater than the change due then the changeToReturn function is called, which test how much money of each currency unit is necessary to return the change."
-            },
-            {
-                "image": "",
-                "sectionTitle":"Caesars Cipher",
-                "sectionSubtitle":"projects/caesar/caesar.js",
-                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/caesar/caesar.html",
-                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/caesar/caesar.js",
-                "sectionDescription": "In this project I had to write a function which takes a <a class='link-underline' href='https://en.wikipedia.org/wiki/ROT13'>ROT13</a> encoded string as input and returns a decoded string. First I convert the string into an array that contains all the words. Then I turn each word into an array and compare each letter with its index in the alphabet to exchange it for the 13th letter after or before it."
-            },
-            {
-                "image": "",
-                "sectionTitle":"Roman Numeral Converter",
-                "sectionSubtitle":"projects/Roman/roman.js",
-                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/Roman/roman.html",
-                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/Roman/roman.js",
-                "sectionDescription": "In this challenge I had to convert the given number into a roman numeral. First I turn the number given in a 2D array to break it into Thousands, Hundreds, Tens and Ones. Then with the index, a switch statement and another 2D array where I keep the Roman characters I select the number that corresponds to each."
-            },
-            {
-                "image": "",
-                "sectionTitle":"Palindrome Checker",
-                "sectionSubtitle":"projects/palindrome/palindrome.js",
-                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/palindrome/palindrome.html",
-                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/palindrome/palindrome.js",
-                "sectionDescription": "It is about writing a function that returns true if the given string is a palindrome. Otherwise, it returns false. To solve it, only one function was necessary. First I remove all non-alphanumeric characters and turn everything into the same case. Then I check if the word backwards matches with the original."
-            },
-            {
-                "image": "",
-                "sectionTitle":"Telephone Number Validator",
-                "sectionSubtitle":"projects/phone/phone.js",
-                "sectionWebLink": "https://nestorhdez.github.io/Freecode-Algorithms/projects/phone/phone.html",
-                "sectionGithubLink": "https://github.com/nestorhdez/Freecode-Algorithms/blob/master/projects/phone/phone.js",
-                "sectionDescription": "This function should return true if the passed string looks like a valid US phone number. To check it you only need an if statement and use a regular expression."
-            }
-        ]
+        }
     },
     {
         "id": "3",
         "title": "Netflix Clone",
-        "description": "A pixel perfect challenge creating copies of few Netflix mockups.",
-        "urlImage": "/images/netflix/netflix-clone.jpg",
+        "description": "A pixel-perfect challenge to test the knowledges in layout with html, css and sass. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
         "images": ["/images/netflix/netflix-clone.jpg", "/images/netflix/netflix.png", "/images/netflix/netflix-search.png", "/images/netflix/netflix-play.png"],
-        "alt": "Netflix clone image",
-        "detailDescription": "A pixel-perfect challenge to test the knowledges in layout with html, css and sass. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
         "skills": [
             "html5-plain colored",
             "css3-plain colored",
@@ -161,10 +60,7 @@
         "id": "2",
         "title": "Spotify concept",
         "description": "Layout of a Spotify concept done just with HTML and CSS. Based on a mockup design for desktop with some changes made by me to be responsive on smallest devices.",
-        "urlImage": "/images/spotify/spotify-laptop.png",
         "images": ["/images/spotify/spotify-laptop.png", "/images/spotify/spotify.png"],
-        "alt": "Spotify clone image",
-        "detailDescription": "Layout of a Spotify concept done just with HTML and CSS. Based on a mockup design for desktop with some changes made by me to be responsive on smallest devices.",
         "skills": [
             "html5-plain colored",
             "css3-plain colored"
@@ -177,11 +73,8 @@
     {
         "id": "1",
         "title": "Web Style Guide with Sass",
-        "description": "Project to practice sass",
-        "urlImage": "/images/sass-guide/sass-project.jpg",
+        "description": "First project carried out using the knowledge acquired in Sass. It is a mobile-first and responsive style guide.",
         "images": ["/images/sass-guide/sass-project.jpg", "/images/sass-guide/sass-guide.png"],
-        "alt":"Project image",
-        "detailDescription": "First project carried out using the knowledge acquired in Sass. It is a mobile-first and responsive style guide.",
         "skills": [
             "html5-plain colored",
             "css3-plain colored",
