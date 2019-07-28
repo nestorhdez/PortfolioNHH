@@ -129,10 +129,13 @@
             flex-basis: 60%;
         }
     }
-
     .project-text {
         padding-left: 15px;
         padding-right: 30px;
+    }
+    .reverse-text {
+        order: 1;
+        padding-left: 35px;
     }
     .project__title, .project__links-container {
         display: inline-block;

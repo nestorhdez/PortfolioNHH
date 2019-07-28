@@ -32,8 +32,8 @@ return (`
 
 const htmlProject = (project) => {
     return (`
-        <div class="project ${project.id%2 !== 0 ? ' reverse-text' : ''}">
-            <div class="project-text">
+        <div class="project">
+            <div class="project-text ${project.id%2 !== 0 ? ' reverse-text' : ''}">
                 <div class="project__title-container">
                     <h2 class="project__title">${project.title}</h2>
                     <div class="project__tech-icons">

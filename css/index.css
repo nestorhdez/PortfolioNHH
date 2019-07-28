@@ -295,6 +295,10 @@ p {
     padding-left: 15px;
     padding-right: 30px; }
 
+  .reverse-text {
+    order: 1;
+    padding-left: 35px; }
+
   .project__title, .project__links-container {
     display: inline-block; }
 
@@ -365,72 +369,6 @@ p {
       order: -1;
       margin: 0;
       margin-right: 50px; } }
-#skills-project-container {
-  margin-top: 14px; }
-
-.project-icon {
-  font-size: 2rem;
-  margin-top: 10px;
-  margin-right: 10px; }
-
-.detail-title {
-  font-size: 1.5rem;
-  margin-bottom: 20px; }
-
-#detail-main-container {
-  width: 80%;
-  margin: 0 auto 70px; }
-
-#detail-description-container, #detail-explanation-title {
-  margin-top: 70px; }
-
-#links-project-container {
-  margin-top: 50px; }
-
-#detail-explanation-container {
-  display: none; }
-
-#sections-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 50px;
-  margin-bottom: 80px; }
-  #sections-container img {
-    width: 100%; }
-  #sections-container .section-description {
-    margin-top: 20px; }
-
-.section-title {
-  font-size: 1.3rem;
-  font-weight: 500; }
-
-.section-subtitle {
-  color: #414444;
-  font-family: monospace; }
-
-.section-link {
-  font-size: 18px;
-  margin: 5px 0px 0px 5px; }
-
-.link-underline {
-  text-decoration: underline; }
-
-@media (min-width: 768px) {
-  #detail-description-container, #links-project-container {
-    max-width: 50%; }
-
-  #detail-explanation-title {
-    margin-bottom: 40px; }
-
-  #sections-container {
-    grid-template-columns: 1fr 1fr;
-    grid-auto-flow: dense; }
-    #sections-container .image-section {
-      height: 90%; }
-    #sections-container .reverse-img {
-      grid-column: 1 / 2; }
-    #sections-container .reverse-text {
-      grid-column: 2 / 3; } }
 footer {
   display: flex;
   flex-direction: column;
