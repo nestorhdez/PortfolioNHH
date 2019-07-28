@@ -1,12 +1,12 @@
 [
     {
         "id": "6",
-        "title": "CV-web",
+        "title": "Curriculum management",
         "description": "Javascript challenge and the last project of the bootcamp",
         "urlImage": "/images/cv/cv-web.jpg",
         "images": ["/images/cv/cv-web.jpg", "/images/cv/user-modal.png", "/images/cv/user-edit.png", "/images/cv/company-modal.png", "/images/cv/company-edit.png", "/images/cv/cv-web-landing-page.png"],
         "alt": "Project image",
-        "detailDescription": "Last project made in the bootcamp 20H Talent. This is the implementation of everything learned to date with javascript, plus a test to strengthen teamwork with techniques such as scrum. The task assigned to my group, was to make a web application for desktop users with the aim of connecting people looking for employment in the world of web development with companies of the same. <br> Most of the time I spent doing tasks with javascript, although I also had some layout with bootstrap and css. <br><br> At the beginning of the project, I did the tasks of js writing in ES5 with global functions. As I was progressing in the bootcamp, I restructured the code to make it object oriented until I finally did it with ES6 classes. You can see how they were structured in Github: <br> <span class=\"section-subtitle\">/js/model.js, /js/features-model.js, /js/render.js and /js/companies.js (class Companies).</span>",
+        "detailDescription": "Group project carried out with git flow and scrum as keys for the organization. The goal was to make a web with the aim of manage curriculums of people and companies. <br> The tasks I did were the following: <br><br> Both, in the profiles and companies pages, I made the request to the API and considering the asynchrony I had to render cards with certain information. Then, depending where do you click you can open a modal with all the information of the profile, edit or delete it. <br><br> Another task was to made the logic to be able to search by filtering the profiles according to the filled inputs.<br><br>Finally, I had to make a landing page for potential interested companies. <br><br>  You can see the code made by me on Github: <br> <span class=\"section-subtitle\"><a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/model.js\">/js/model.js<a/>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/features-model.js\">/js/features-model.js</a>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/render.js\">/js/render.js</a> and <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/companies.js\">/js/companies.js</a> (class Companies).</span>",
         "skills": [
             "html5-plain colored",
             "bootstrap-plain colored",
@@ -146,7 +146,7 @@
         "urlImage": "/images/netflix/netflix-clone.jpg",
         "images": ["/images/netflix/netflix-clone.jpg", "/images/netflix/netflix.png", "/images/netflix/netflix-search.png", "/images/netflix/netflix-play.png"],
         "alt": "Netflix clone image",
-        "detailDescription": "A pixel-perfect challenge to test our knowledge in layout with html, css and sass in the 20htalent bootcamp. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
+        "detailDescription": "A pixel-perfect challenge to test the knowledges in layout with html, css and sass. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
         "skills": [
             "html5-plain colored",
             "css3-plain colored",
