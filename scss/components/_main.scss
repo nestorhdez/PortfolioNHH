@@ -156,6 +156,13 @@
     }
 }
 
+@include breakpoint(1080px) {
+    .project-img-container {
+        width: 510px;
+        height: 329px;
+    }
+}
+
 
 
 

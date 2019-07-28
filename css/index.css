@@ -311,6 +311,10 @@ p {
 
   .project__links-container {
     margin-top: 12px; } }
+@media (min-width: 1080px) {
+  .project-img-container {
+    width: 510px;
+    height: 329px; } }
 #skills-container {
   margin-top: 40px;
   display: flex;
