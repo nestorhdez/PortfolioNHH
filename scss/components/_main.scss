@@ -78,6 +78,7 @@
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
     border-radius: 15px;
 }
 .project-img {
