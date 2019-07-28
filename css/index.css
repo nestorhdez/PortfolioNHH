@@ -175,6 +175,24 @@ p {
 @media (min-width: 768px) {
   #header-bg h1 {
     font-size: 3rem; } }
+.display-flex {
+  display: flex; }
+
+.direction-column {
+  flex-direction: column; }
+
+.justify-center {
+  justify-content: center; }
+
+.justify-between {
+  justify-content: space-between; }
+
+.align-center {
+  align-items: center; }
+
+.direction-column {
+  flex-direction: column; }
+
 #main-container {
   width: 80%;
   margin: 0 auto; }
@@ -182,82 +200,83 @@ p {
 .title {
   font-size: 2rem;
   text-align: center;
-  margin-top: 100px; }
+  margin-top: 100px;
+  margin-bottom: 70px; }
 
-#projects-container {
-  margin-top: 70px;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 30px;
-  justify-items: center; }
-  #projects-container .project-card {
-    box-shadow: 5px 5px 5px #0000004a;
-    border-radius: 4px;
-    width: 100%;
-    height: 250px;
-    position: relative;
-    overflow: hidden; }
-    #projects-container .project-card .project-img {
-      border-radius: 4px;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transform: scale(1.1) rotate(0.3deg); }
-    #projects-container .project-card .img-overlay {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: absolute;
-      top: 40%;
-      width: 100%;
-      height: 60%;
-      background: rgba(0, 0, 0, 0.8);
-      border-radius: 4px;
-      padding: 0 10px; }
-      #projects-container .project-card .img-overlay .overlay-text {
-        text-align: center; }
-        #projects-container .project-card .img-overlay .overlay-text .overlay-title {
-          color: #fff; }
-        #projects-container .project-card .img-overlay .overlay-text .overlay-title {
-          font-size: 1.3rem;
-          margin: 0; }
-      #projects-container .project-card .img-overlay .link-project {
-        position: absolute;
-        bottom: 15px;
-        right: 20px;
-        color: #fff;
-        font-size: 1.25rem; }
+.project {
+  margin-bottom: 100px; }
 
-.thumbnail-skills-container {
+.project__title {
+  font-size: 1.4rem; }
+
+.project__tech-icons {
+  margin: 15px 0; }
+  .project__tech-icons i {
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 50%;
+    border: 1px solid;
+    margin-right: 10px; }
+
+.project__links-container {
+  margin-top: 15px;
+  margin-bottom: 20px; }
+
+.project__link {
+  font-size: 1.3rem;
+  margin-right: 15px; }
+
+.description-container {
   margin-top: 10px; }
 
-.thumbnail-icon {
-  font-size: 1.6rem;
-  margin: 5px; }
+.project__icons {
+  padding: 10px 0; }
+
+.project-img-container {
+  position: relative;
+  width: 256px;
+  height: 171px;
+  border-radius: 15px;
+  box-shadow: 4px 2px 13px 1px rgba(0, 0, 0, 0.3); }
+
+.project-images {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 15px; }
+
+.project-img {
+  width: 100%; }
+
+.arrow-img {
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  background: none;
+  border: none; }
+
+.arrow-left {
+  left: 10px; }
+
+.arrow-right {
+  right: 10px; }
 
 @media (min-width: 768px) {
-  .title {
-    text-align: left; }
+  .project {
+    display: flex; }
+    .project .project-text, .project .project-img-container {
+      flex-basis: 50%; }
 
-  #projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr)); } }
-@media (min-width: 1900px) {
-  #projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(355px, 1fr)); } }
-@media (min-width: 2500px) {
-  #projects-container {
-    grid-template-columns: repeat(auto-fill, minmax(490px, 1fr)); } }
-@media (hover: hover) {
-  #projects-container .project-card .img-overlay {
-    top: 0;
-    height: 100%;
-    opacity: 0;
-    transition: opacity .5s; }
-    #projects-container .project-card .img-overlay .overlay-text .overlay-title {
-      margin-bottom: 10px;
-      font-size: 2rem; }
-  #projects-container .project-card:hover .img-overlay {
-    opacity: 1; } }
+  .project-img-container {
+    height: 245px; }
+
+  .project-text {
+    padding: 0 15px; }
+
+  .project__title, .project__links-container {
+    display: inline; } }
 #skills-container {
   margin-top: 40px;
   display: flex;

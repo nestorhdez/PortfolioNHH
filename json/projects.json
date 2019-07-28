@@ -4,6 +4,7 @@
         "title": "Front-end Libraries Certification",
         "description": "Projects made with React for the Freecodecamp Front-end Libraries Certification",
         "urlImage": "/images/libraries.jpg",
+        "images": ["/images/libraries.jpg", "/images/quote-machine.png", "/images/markdown-previewer.png"],
         "alt":"Project image",
         "detailDescription": "To achieve this certification you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment but I have also applied Scss.",
         "skills": [
@@ -37,6 +38,7 @@
         "title": "Algorithms And Data Structures",
         "description": "Javascript Algorithms And Data Structures Certification",
         "urlImage": "/images/Freecode.png",
+        "images": ["/images/Freecode.png"],
         "alt":"Project image",
         "detailDescription": "These are the five projects needed to obtain the <a class='link-underline' href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects' target='_blank'>FreeCodeCamp certification</a> of JavaScript Algorithms and Data Structures. All of them require a script that solves the problem posed. I also did a basic interface to be able to easily test some of them.",
         "skills": [
@@ -94,6 +96,7 @@
         "title": "CV-web",
         "description": "Javascript challenge and the last project of the bootcamp",
         "urlImage": "/images/cv-web.jpg",
+        "images": ["/images/cv-web.jpg", "/images/user-cards.jpg", "/images/user-search.jpg", "/images/cv-web-landing-page.png", "/images/companies-cards.jpg"],
         "alt": "Project image",
         "detailDescription": "Last project made in the bootcamp 20H Talent. This is the implementation of everything learned to date with javascript, plus a test to strengthen teamwork with techniques such as scrum. The task assigned to my group, was to make a web application for desktop users with the aim of connecting people looking for employment in the world of web development with companies of the same. <br> Most of the time I spent doing tasks with javascript, although I also had some layout with bootstrap and css. <br><br> At the beginning of the project, I did the tasks of js writing in ES5 with global functions. As I was progressing in the bootcamp, I restructured the code to make it object oriented until I finally did it with ES6 classes. You can see how they were structured in Github: <br> <span class=\"section-subtitle\">/js/model.js, /js/features-model.js, /js/render.js and /js/companies.js (class Companies).</span>",
         "skills": [
@@ -141,6 +144,7 @@
         "title": "Netflix Clone",
         "description": "A pixel perfect challenge creating copies of few Netflix mockups.",
         "urlImage": "/images/netflix-clone.jpg",
+        "images": ["/images/netflix-clone.jpg"],
         "alt": "Netflix clone image",
         "detailDescription": "A pixel-perfect challenge to test our knowledge in layout with html, css and sass in the 20htalent bootcamp. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
         "skills": [
@@ -158,6 +162,7 @@
         "title": "Web Style Guide with Sass",
         "description": "Project to practice sass",
         "urlImage": "/images/sass-project.jpg",
+        "images": ["/images/sass-project.jpg"],
         "alt":"Project image",
         "detailDescription": "First project carried out using the knowledge acquired in Sass. It is a mobile-first and responsive style guide.",
         "skills": [
@@ -175,6 +180,7 @@
         "title": "Online Registration Form",
         "description": "Responsive form",
         "urlImage": "/images/form-project.jpg",
+        "images": ["/images/form-project.jpg"],
         "alt":"Project image",
         "detailDescription": "Responsive and mobile-first project oriented to design a form with a basic design based on two mockup: mobile version and desktop version.",
         "skills": [
@@ -191,6 +197,7 @@
         "title": "Responsive Layout",
         "description": "Responsive Layout with floats",
         "urlImage": "/images/floats-project.jpg",
+        "images": ["/images/floats-project.jpg"],
         "alt":"Project image",
         "detailDescription": "Project carried out with my partner María del bootcamp 20H Talent. The objective was to work, for the first time in the course, in pairs. In the first place we made the mobile layout in pair programming. From there each one was responsible for making the media queries of each version. In my case, I made the desktop version.",
         "skills": [
