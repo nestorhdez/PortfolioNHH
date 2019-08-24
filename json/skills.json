@@ -20,6 +20,10 @@
         "title": "JAVASCRIPT"
     },
     {
+        "skill": "vuejs-plain colored",
+        "title": "VUE.js"
+    },
+    {
         "skill": "jquery-plain colored",
         "title": "JQUERY"
     },
@@ -29,6 +33,6 @@
     },
     {
         "skill": "react-original colored",
-        "title": "REACT (In process)"
+        "title": "REACT (Basic)"
     }
 ]
