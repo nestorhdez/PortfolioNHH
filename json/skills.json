@@ -34,5 +34,13 @@
     {
         "skill": "react-original colored",
         "title": "REACT (Basic)"
+    },
+    {
+        "skill": "nodejs-plain-wordmark colored",
+        "title": "Node.js"
+    },
+    {
+        "skill": "mongodb-plain colored",
+        "title": "Mongodb"
     }
 ]
