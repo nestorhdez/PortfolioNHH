@@ -12,6 +12,16 @@
     },
     {
         "id": "6",
+        "title": "Twitter clone API",
+        "description": "Restful API built in nodejs with express and connected to a mongodb database through mongoose. To be able to sign up and log in I have used JWT authorization. Once you have an account you can search users, follow them, send tweets, like tweets, remove them and delete your own account.",
+        "images": ["/images/tw-clone/clone.png"],
+        "skills": ["nodejs-plain-wordmark colored", "mongodb-plain colored"],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/twitter-clone-api"
+        }
+    },
+    {
+        "id": "5",
         "title": "Curriculum management",
         "description": "Group project carried out with git flow and scrum as keys for the organization. The goal was to make a web with the aim of manage curriculums of people and companies. <br> The tasks I did were the following: <br><br> Both, in the profiles and companies pages, I made the request to the API and considering the asynchrony I had to render cards with certain information. Then, depending where do you click you can open a modal with all the information of the profile, edit or delete it. <br><br> Another task was to made the logic to be able to search by filtering the profiles according to the filled inputs.<br><br>Finally, I had to make a landing page for potential interested companies. <br><br>  You can see the code made by me on Github: <br> <span class=\"section-subtitle\"><a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/model.js\">/js/model.js<a/>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/features-model.js\">/js/features-model.js</a>, <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/render.js\">/js/render.js</a> and <a target:\"_blank\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/companies.js\">/js/companies.js</a> (class Companies).</span>",
         "images": ["/images/cv/cv-web.jpg", "/images/cv/user-modal.png", "/images/cv/user-edit.png", "/images/cv/company-modal.png", "/images/cv/company-edit.png", "/images/cv/cv-web-landing-page.png"],
@@ -27,7 +37,7 @@
         }
     }
     ,{
-        "id": "5",
+        "id": "4",
         "title": "Front-end Libraries Certification",
         "description": "To achieve this <a class=\"link-underline\" target='_blank' href=\"https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/\">certification</a> you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment. <br><br> The first project, random quote machine, has to fetch a phrase and its author asynchronously. You have the option to generate a new phrase or tweet the current one. <br><br> The Markdown previewer must print the text written as markdown in the editor container as html in the preview container.",
         "images": ["/images/libraries/libraries.jpg", "/images/libraries/quote-machine.png", "/images/libraries/markdown-previewer.png"],
@@ -40,7 +50,7 @@
         }
     },
     {
-        "id": "4",
+        "id": "3",
         "title": "Algorithms And Data Structures",
         "description": "These are the five projects needed to obtain the <a class='link-underline' href='https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects' target='_blank'>FreeCodeCamp certification</a> of JavaScript Algorithms and Data Structures. I also did a basic interface to be able to easily test some of them. <br><br> The only one that has no visual interface is the Cash Register project. It consists of design a function that accepts purchase price as the first argument, payment as the second, and cash-in-drawer (2D array listing available currency) as the third. Then, the function should always return an object with a status key with the state of the cash register as the value and a change key with the change due as the value.",
         "images": ["/images/algorithms/Freecode.png", "/images/algorithms/palindrome.png", "/images/algorithms/roman.png", "/images/algorithms/caesar.png", "/images/algorithms/phone.png"],
@@ -53,7 +63,7 @@
         }
     },
     {
-        "id": "3",
+        "id": "2",
         "title": "Netflix Clone",
         "description": "A pixel-perfect challenge to test the knowledges in layout with html, css and sass. It is a clone of the Netflix desktop platform (this project was not proposed to be responsive). It consists of three parts, the main page, the search page and the video playback page.",
         "images": ["/images/netflix/netflix-clone.jpg", "/images/netflix/netflix.png", "/images/netflix/netflix-search.png", "/images/netflix/netflix-play.png"],
@@ -68,7 +78,7 @@
         }
     },
     {
-        "id": "2",
+        "id": "1",
         "title": "Spotify concept",
         "description": "Layout of a Spotify concept done just with HTML and CSS. Based on a mockup design for desktop with some changes made by me to be responsive on smallest devices.",
         "images": ["/images/spotify/spotify-laptop.png", "/images/spotify/spotify.png"],
@@ -79,21 +89,6 @@
         "linksToProject": {
             "github": "https://github.com/nestorhdez/Spotify-clone",
             "web": "https://nestorhdez.github.io/Spotify-clone/"
-        }
-    },
-    {
-        "id": "1",
-        "title": "Web Style Guide with Sass",
-        "description": "First project carried out using the knowledge acquired in Sass. It is a mobile-first and responsive style guide.",
-        "images": ["/images/sass-guide/sass-project.jpg", "/images/sass-guide/sass-guide.png"],
-        "skills": [
-            "html5-plain colored",
-            "css3-plain colored",
-            "sass-original colored"
-        ],
-        "linksToProject": {
-            "github": "https://github.com/nestorhdez/ikigai-project-4-nestor-cristian",
-            "web": "https://20h-talent.github.io/ikigai-project-4-nestor-cristian/"
         }
     }
 ]

@@ -5,8 +5,8 @@ const thumbnailIcon = (string) => {
 }
 const htmlLinksProject = (project) => {
     return (`
-       ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" class="project__link" target="_blank"><i class="fab fa-github"></i></a>` : null}
-       ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" class="project__link" target="_blank"><i class="fas fa-link"></i></a>` : null}
+       ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" class="project__link" target="_blank"><i class="fab fa-github"></i></a>` : ''}
+       ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" class="project__link" target="_blank"><i class="fas fa-link"></i></a>` : ''}
     `);
 }
 
@@ -33,7 +33,7 @@ return (`
 const htmlProject = (project) => {
     return (`
         <div class="project">
-            <div class="project-text ${project.id%2 !== 0 ? ' reverse-text' : ''}">
+            <div class="project-text ${project.id%2 == 0 ? ' reverse-text' : ''}">
                 <div class="project__title-container">
                     <h2 class="project__title">${project.title}</h2>
                     <div class="project__tech-icons">
