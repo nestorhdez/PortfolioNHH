@@ -11,7 +11,7 @@ const htmlLinksProject = (project) => {
 }
 
 const htmlProjectImages = (img) => {
-    return `<img class="project-img" src="${img}" alt="Project image"></img>`;
+    return `<img class="project-img" data-src="${img}"></img>`;
 }
 
 const renderProjectImages = (project) => {
@@ -63,6 +63,43 @@ const renderProjects = (array) => {
     array.forEach(project => document.querySelector('#projects-container').innerHTML += htmlProject(project));
 }
 
+//Intersection Observer
+
+const intersection = () => {
+
+    const options = {
+        rootMargin: '0px 0px -200px 0px',
+    }
+
+    const isImage = (node) => {
+        return node.className == 'project-img';
+    }
+
+    const setSrcAndAlt = (img) => {
+        img.src = img.dataset.src;
+        img.alt = 'Project-image';
+    }
+    
+    const callback = (entries, observer) => {
+        entries.forEach((entry) => {
+            if(entry.isIntersecting || entry.intersectionRadio > 0){
+                entry.target.childNodes.forEach(child => isImage(child) ? setSrcAndAlt(child) : '');
+                observer.unobserve(entry.target);
+            }
+        })
+    }
+    
+    let observer = new IntersectionObserver(callback, options);
+    let target = document.querySelectorAll('.project-images');
+    target.forEach( div => observer.observe(div));
+}
+
+
 fetch('./json/projects.json')
 .then((res) => res.json())
-.then((res) => renderProjects(res));
+.then((res) => {
+    renderProjects(res);
+    if(!!window.IntersectionObserver){
+        intersection();
+    }
+});
