@@ -1,6 +1,27 @@
 [
     {
+        "id": "8",
+        "title": "Twitter clone",
+        "description": "Single page application done with Vue.js and Vuex (state management). The user is able to create a profile, log in, follow users, search users and write, like  and search tweets. It consists of five views: Log in/log out, timeline, search engine, tweet writer and users profile. It has been developed focused on mobile, and adapting it to wider screens.",
+        "images": ["/images/twitter/thumbnail.jpg","/images/twitter/login.png", "/images/twitter/timeline.png", "/images/twitter/search.png", "/images/twitter/tweet.png", "/images/twitter/profile.png"],
+        "skills": ["vuejs-plain colored"],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/twitter-clone",
+            "web": "https://nestorhdez.github.io/twitter-clone/#/"
+        }
+    },
+    {
         "id": "7",
+        "title": "Twitter clone API",
+        "description": "Restful API built in nodejs with express and connected to a mongodb database through mongoose. To be able to sign up and log in I have used JWT authorization. Once you have an account you can search users, follow them, send tweets, like tweets, remove them and delete your own account.",
+        "images": ["/images/tw-clone/clone.png"],
+        "skills": ["nodejs-plain-wordmark colored", "mongodb-plain colored"],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/twitter-clone-api"
+        }
+    },
+    {
+        "id": "6",
         "title": "Marvel comics searcher",
         "description": "Vue.js project that fetch data from the marvels API, let you make a search of a comic and give you some detail information. It consists of two views: home and detail. <br>Trying to make the code easy to understand and maintain, I have focused on writing reusable and independent components.",
         "images": ["/images/marvel/thumbnail.png","/images/marvel/home.png", "/images/marvel/detail.png"],
@@ -8,16 +29,6 @@
         "linksToProject": {
             "github": "https://github.com/nestorhdez/marvel",
             "web": "https://nestorhdez.github.io/marvel/#/"
-        }
-    },
-    {
-        "id": "6",
-        "title": "Twitter clone API",
-        "description": "Restful API built in nodejs with express and connected to a mongodb database through mongoose. To be able to sign up and log in I have used JWT authorization. Once you have an account you can search users, follow them, send tweets, like tweets, remove them and delete your own account.",
-        "images": ["/images/tw-clone/clone.png"],
-        "skills": ["nodejs-plain-wordmark colored", "mongodb-plain colored"],
-        "linksToProject": {
-            "github": "https://github.com/nestorhdez/twitter-clone-api"
         }
     },
     {
