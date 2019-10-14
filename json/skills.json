@@ -1,5 +1,33 @@
 [
     {
+        "skill": "javascript-plain colored",
+        "title": "JAVASCRIPT"
+    },
+    {
+        "skill": "vuejs-plain colored",
+        "title": "VUE.js"
+    },
+    {
+        "skill": "nodejs-plain-wordmark colored",
+        "title": "Node.js"
+    },
+    {
+        "skill": "git-plain colored",
+        "title": "GIT"
+    },
+    {
+        "skill": "mongodb-plain colored",
+        "title": "Mongodb"
+    },
+    {
+        "skill": "react-original colored",
+        "title": "REACT (Basic)"
+    },
+    {
+        "skill": "docker-plain colored",
+        "title": "Docker (Basic)"
+    },
+    {
         "skill": "html5-plain colored",
         "title": "HTML5"
     },
@@ -16,31 +44,7 @@
         "title": "BOOTSTRAP"
     },
     {
-        "skill": "javascript-plain colored",
-        "title": "JAVASCRIPT"
-    },
-    {
-        "skill": "vuejs-plain colored",
-        "title": "VUE.js"
-    },
-    {
         "skill": "jquery-plain colored",
         "title": "JQUERY"
-    },
-    {
-        "skill": "git-plain colored",
-        "title": "GIT"
-    },
-    {
-        "skill": "react-original colored",
-        "title": "REACT (Basic)"
-    },
-    {
-        "skill": "nodejs-plain-wordmark colored",
-        "title": "Node.js"
-    },
-    {
-        "skill": "mongodb-plain colored",
-        "title": "Mongodb"
     }
 ]
