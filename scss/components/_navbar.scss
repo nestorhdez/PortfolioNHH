@@ -4,6 +4,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    height: 64px;
     padding: 1rem 3rem;
     z-index: 99;
     transition: background-color .5s ease;
@@ -13,7 +14,7 @@
         font-size: 1.1rem;
     }
     #name-navbar {
-        width: 70px;
+        width: 45px;
         color: $primary-font-color;
         font-size: 1.7rem;
         font-family: $secondary-font;
@@ -30,10 +31,6 @@
             padding: 15px;
         }
     }
-}
-
-.navbar-container {
-    height: 64px;
 }
 
 #menu-hamb {
@@ -75,23 +72,22 @@
 }
 
 //Hamburguer menu animation
-.menu-animation-open {
+#navbar-container.menu-animation-open {
     animation-name: menu-open;
-    animation-duration: 1.5s;
-    height: auto;
+    animation-duration: 1s;
+    height: var(--nav-mobile-height);
 }
 @keyframes menu-open {
     0% { height: 64px; }
-    55% { height: 300px; }
-    100% { height: auto; }
+    100% { height: var(--nav-mobile-height); }
 }
-.menu-animation-close {
+#navbar-container.menu-animation-close {
     animation-name: menu-close;
     animation-duration: 1s;
     height: 64px;
 }
 @keyframes menu-close {
-    0% { height: 300px; }
+    0% { height: var(--nav-mobile-height); }
     100%{ height: 64px; }
 }
 
