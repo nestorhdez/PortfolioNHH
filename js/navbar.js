@@ -37,11 +37,13 @@ window.addEventListener('resize', () => {
 });
 
 // Set the height of the mobile navbar
-const navbarHeight = document.querySelector('#navbar-container').clientHeight;
-const linksContainer = document.querySelector('#nav-mobile');
-const linksHeight = linksContainer.clientHeight;
-const linksMargin = +window.getComputedStyle(linksContainer).getPropertyValue('margin-top').split('px')[0];
-document.documentElement.style.setProperty('--nav-mobile-height', `${navbarHeight + linksHeight + linksMargin}px`);
+setTimeout(() => {
+    const navbarHeight = document.querySelector('#navbar-container').clientHeight;
+    const linksContainer = document.querySelector('#nav-mobile');
+    const linksHeight = linksContainer.clientHeight;
+    const linksMargin = +window.getComputedStyle(linksContainer).getPropertyValue('margin-top').split('px')[0];
+    document.documentElement.style.setProperty('--nav-mobile-height', `${navbarHeight + linksHeight + linksMargin}px`);
+}, 500);
 
 document.querySelector('#menu-hamb').addEventListener('click', hamburgerMenu);
 document.querySelector('#nav-mobile').addEventListener('click', hamburgerMenu);
