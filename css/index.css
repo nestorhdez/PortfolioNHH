@@ -1,6 +1,5 @@
 :root {
   --opacity-header: 0.5;
-  --nav-mobile-height: auto;
 }
 
 *,
@@ -95,15 +94,18 @@ p {
 #navbar-container.menu-animation-open {
   animation-name: menu-open;
   animation-duration: 1s;
-  height: var(--nav-mobile-height);
+  height: auto;
 }
 
 @keyframes menu-open {
   0% {
     height: 64px;
   }
+  55% {
+    height: 300px;
+  }
   100% {
-    height: var(--nav-mobile-height);
+    height: auto;
   }
 }
 #navbar-container.menu-animation-close {
@@ -114,7 +116,7 @@ p {
 
 @keyframes menu-close {
   0% {
-    height: var(--nav-mobile-height);
+    height: 300px;
   }
   100% {
     height: 64px;
