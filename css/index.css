@@ -30,7 +30,7 @@ p {
   height: 64px;
   padding: 1rem 3rem;
   z-index: 99;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.8s ease;
   overflow: hidden;
 }
 #navbar-container .nav-link, #navbar-container .nav-link-mobile {
@@ -49,11 +49,12 @@ p {
 #navbar-container #nav-mobile {
   width: 100%;
   text-align: center;
-  margin-top: 20px;
+  margin: auto;
 }
-#navbar-container #nav-mobile a {
+#navbar-container #nav-mobile .nav-link-mobile {
   display: block;
   padding: 15px;
+  opacity: 0;
 }
 
 #menu-hamb {
@@ -93,33 +94,60 @@ p {
 
 #navbar-container.menu-animation-open {
   animation-name: menu-open;
-  animation-duration: 1s;
-  height: auto;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+#navbar-container.menu-animation-open .nav-link-mobile {
+  animation-name: show-links;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes menu-open {
-  0% {
+  from {
     height: 64px;
   }
-  55% {
-    height: 300px;
+  to {
+    height: 100vh;
   }
-  100% {
-    height: auto;
+}
+@keyframes show-links {
+  from {
+    opacity: 0;
+    transform: translate(-200px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
   }
 }
 #navbar-container.menu-animation-close {
   animation-name: menu-close;
-  animation-duration: 1s;
-  height: 64px;
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
+}
+#navbar-container.menu-animation-close .nav-link-mobile {
+  animation-name: hide-links;
+  animation-duration: 0.5s;
 }
 
 @keyframes menu-close {
-  0% {
-    height: 300px;
+  from {
+    height: 100vh;
   }
-  100% {
+  to {
     height: 64px;
+  }
+}
+@keyframes hide-links {
+  from {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-150px, 0px);
   }
 }
 @media (min-width: 768px) {
