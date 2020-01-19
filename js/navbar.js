@@ -16,13 +16,6 @@ function hamburgerMenu() {
     };
 }
 
-window.addEventListener('resize', () => {
-    if(window.innerWidth >= 768){
-        document.querySelector('#nav-mobile').setAttribute('style', 'display: none;');
-        document.querySelector('#menu-hamb').className = '';
-    }
-});
-
 // Change navbar color on scroll
 function navbarColor() {
     let navbar = document.querySelector('#navbar-container');
