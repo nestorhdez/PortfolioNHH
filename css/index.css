@@ -1,5 +1,6 @@
 :root {
   --opacity-header: 0.5;
+  --bg-navbar: transparent;
 }
 
 *,
@@ -30,7 +31,8 @@ p {
   height: 64px;
   padding: 1rem 3rem;
   z-index: 99;
-  transition: background-color 0.8s ease;
+  background-color: var(--bg-navbar);
+  transition: background-color 0.8s ease, height 0.8s;
   overflow: hidden;
 }
 #navbar-container .nav-link, #navbar-container .nav-link-mobile {
@@ -46,15 +48,32 @@ p {
 #navbar-container #nav-desktop {
   display: none;
 }
-#navbar-container #nav-mobile {
+
+#navbar-container.open {
+  height: 100vh;
+}
+
+#nav-mobile {
   width: 100%;
   text-align: center;
   margin: auto;
+  opacity: 0;
+  transform-origin: 0% -100%;
+  visibility: hidden;
+  transition-property: opacity, visibility;
+  transition-duration: 0.8s;
+  transition-timing-function: linear, step-start;
+  transition-delay: 0.4s;
 }
-#navbar-container #nav-mobile .nav-link-mobile {
+#nav-mobile .nav-link-mobile {
   display: block;
   padding: 15px;
-  opacity: 0;
+}
+
+#nav-mobile.show {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  visibility: visible;
 }
 
 #menu-hamb {
@@ -92,64 +111,6 @@ p {
   transform: rotate(-45deg) translate(-5px, -4px);
 }
 
-#navbar-container.menu-animation-open {
-  animation-name: menu-open;
-  animation-duration: 0.8s;
-  animation-fill-mode: forwards;
-}
-#navbar-container.menu-animation-open .nav-link-mobile {
-  animation-name: show-links;
-  animation-duration: 0.8s;
-  animation-delay: 0.3s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes menu-open {
-  from {
-    height: 64px;
-  }
-  to {
-    height: 100vh;
-  }
-}
-@keyframes show-links {
-  from {
-    opacity: 0;
-    transform: translate(-200px, 0px);
-  }
-  to {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
-}
-#navbar-container.menu-animation-close {
-  animation-name: menu-close;
-  animation-duration: 0.8s;
-  animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
-}
-#navbar-container.menu-animation-close .nav-link-mobile {
-  animation-name: hide-links;
-  animation-duration: 0.5s;
-}
-
-@keyframes menu-close {
-  from {
-    height: 100vh;
-  }
-  to {
-    height: 64px;
-  }
-}
-@keyframes hide-links {
-  from {
-    opacity: 1;
-    transform: translate(0px, 0px);
-  }
-  to {
-    opacity: 0;
-    transform: translate(-150px, 0px);
-  }
-}
 @media (min-width: 768px) {
   #navbar-container {
     flex-direction: row;
