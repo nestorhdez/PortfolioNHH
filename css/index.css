@@ -32,7 +32,7 @@ p {
   padding: 1rem 3rem;
   z-index: 99;
   background-color: var(--bg-navbar);
-  transition: background-color 0.8s ease, height 0.8s;
+  transition: background-color 0.7s ease, height 0.7s;
   overflow: hidden;
 }
 #navbar-container .nav-link, #navbar-container .nav-link-mobile {
@@ -60,10 +60,7 @@ p {
   opacity: 0;
   transform-origin: 0% -100%;
   visibility: hidden;
-  transition-property: opacity, visibility;
-  transition-duration: 0.8s;
-  transition-timing-function: linear, step-start;
-  transition-delay: 0.4s;
+  animation: hide-links 0.4s;
 }
 #nav-mobile .nav-link-mobile {
   display: block;
@@ -71,11 +68,30 @@ p {
 }
 
 #nav-mobile.show {
-  opacity: 1;
-  transform: translate(0px, 0px);
+  animation: show-links 0.5s ease 0.3s 1 forwards;
   visibility: visible;
 }
 
+@keyframes hide-links {
+  from {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-150px, 0px);
+  }
+}
+@keyframes show-links {
+  from {
+    transform: translate(-200px, 0px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
 #menu-hamb {
   position: absolute;
   top: 14px;
@@ -100,14 +116,14 @@ p {
   transform-origin: 0% 100%;
 }
 
-.cross div:first-child {
+#menu-hamb.cross div:first-child {
   transform: rotate(45deg) translate(-2px, -1px);
 }
-.cross div:nth-last-child(2) {
+#menu-hamb.cross div:nth-last-child(2) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-.cross div:last-child {
+#menu-hamb.cross div:last-child {
   transform: rotate(-45deg) translate(-5px, -4px);
 }
 

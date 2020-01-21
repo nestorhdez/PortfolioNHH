@@ -8,7 +8,7 @@
     padding: 1rem 3rem;
     z-index: 99;
     background-color: var(--bg-navbar);
-    transition: background-color .8s ease, height .8s;
+    transition: background-color .7s ease, height .7s;
     overflow: hidden;
     .nav-link, .nav-link-mobile {
         color: $primary-font-color;
@@ -36,10 +36,7 @@
     opacity: 0;
     transform-origin: 0% -100%;
     visibility: hidden;
-    transition-property: opacity, visibility;
-    transition-duration: .8s;
-    transition-timing-function: linear, step-start;
-    transition-delay: .4s;
+    animation: hide-links .4s;
     .nav-link-mobile {
         display: block;
         padding: 15px;
@@ -47,9 +44,28 @@
 }
 
 #nav-mobile.show {
-    opacity: 1;
-    transform: translate(0px, 0px);
+    animation: show-links .5s ease .3s 1 forwards;
     visibility: visible;
+}
+
+@keyframes hide-links {
+    from {
+        visibility: visible;
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-150px, 0px);
+    }
+}
+
+@keyframes show-links {
+    from { transform: translate(-200px, 0px); }
+    to {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
 }
 
 #menu-hamb {
@@ -77,7 +93,7 @@
     }
 }
 
-.cross {
+#menu-hamb.cross {
     div:first-child {
         transform: rotate(45deg) translate(-2px, -1px);
     }
@@ -89,60 +105,6 @@
       transform: rotate(-45deg) translate(-5px, -4px);
     }
 }
-
-
-//Hamburguer menu animation
-// #navbar-container.menu-animation-open {
-//     animation-name: menu-open;
-//     animation-duration: .8s;
-//     animation-fill-mode: forwards;
-//     .nav-link-mobile{
-//         animation-name: show-links;
-//         animation-duration: .8s;
-//         animation-delay: .3s;
-//         animation-fill-mode: forwards;
-//     }
-// }
-// @keyframes menu-open {
-//     from { height: 64px; }
-//     to { height: 100vh; }
-// }
-
-// @keyframes show-links {
-//     from { 
-//         opacity: 0; 
-//         transform: translate(-200px, 0px);
-//     }
-//     to {
-//         opacity: 1;
-//         transform: translate(0px, 0px);
-//     }
-// }
-
-// #navbar-container.menu-animation-close {
-//     animation-name: menu-close;
-//     animation-duration: .8s;
-//     animation-timing-function: cubic-bezier(0.46, 0.03, 0.52, 0.96);
-//     .nav-link-mobile{
-//         animation-name: hide-links;
-//         animation-duration: .5s;
-//     }
-// }
-// @keyframes menu-close {
-//     from { height: 100vh; }
-//     to { height: 64px; }
-// }
-
-// @keyframes hide-links {
-//     from {
-//         opacity: 1;
-//         transform: translate(0px, 0px);
-//     }
-//     to {
-//         opacity: 0;
-//         transform: translate(-150px, 0px);
-//     }
-// }
 
 //Media Query Tablet
 
