@@ -35,7 +35,7 @@ p {
   transition: background-color 0.7s ease, height 0.7s;
   overflow: hidden;
 }
-#navbar-container .nav-link, #navbar-container .nav-link-mobile {
+#navbar-container .nav-link {
   color: #fff;
   font-size: 1.1rem;
 }
@@ -45,15 +45,12 @@ p {
   font-size: 1.7rem;
   font-family: "Roboto", sans-serif;
 }
-#navbar-container #nav-desktop {
-  display: none;
-}
 
 #navbar-container.open {
   height: 100vh;
 }
 
-#nav-mobile {
+#nav-links-container {
   width: 100%;
   text-align: center;
   margin: auto;
@@ -62,12 +59,12 @@ p {
   visibility: hidden;
   animation: hide-links 0.4s;
 }
-#nav-mobile .nav-link-mobile {
+#nav-links-container .nav-link {
   display: block;
   padding: 15px;
 }
 
-#nav-mobile.show {
+#nav-links-container.show {
   animation: show-links 0.5s ease 0.3s 1 forwards;
   visibility: visible;
 }
@@ -131,18 +128,20 @@ p {
   #navbar-container {
     flex-direction: row;
   }
-  #navbar-container #nav-mobile {
-    display: none;
-  }
-  #navbar-container #nav-desktop {
+  #navbar-container #nav-links-container {
     display: block;
-    margin-left: auto;
+    opacity: 1;
+    visibility: visible;
+    margin: 0 0 0 auto;
+    width: initial;
   }
-  #navbar-container #nav-desktop a {
+  #navbar-container #nav-links-container .nav-link {
     filter: brightness(100%);
     margin: 0 10px;
+    padding: 0;
+    display: inline;
   }
-  #navbar-container #nav-desktop a:hover {
+  #navbar-container #nav-links-container .nav-link:hover {
     filter: brightness(75%);
   }
 
