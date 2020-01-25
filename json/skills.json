@@ -1,19 +1,23 @@
 [
     {
         "skill": "javascript-plain colored",
-        "title": "JAVASCRIPT"
+        "title": "Javascript"
     },
     {
         "skill": "vuejs-plain colored",
-        "title": "VUE.js"
+        "title": "Vue"
     },
     {
-        "skill": "nodejs-plain-wordmark colored",
-        "title": "Node.js"
+        "skill": "nodejs-plain colored",
+        "title": "Node"
+    },
+    {
+        "skill": "typescript-plain colored",
+        "title": "TypeScript"
     },
     {
         "skill": "git-plain colored",
-        "title": "GIT"
+        "title": "Git"
     },
     {
         "skill": "mongodb-plain colored",
@@ -21,7 +25,7 @@
     },
     {
         "skill": "react-original colored",
-        "title": "REACT (Basic)"
+        "title": "React (Basic)"
     },
     {
         "skill": "docker-plain colored",
@@ -29,22 +33,22 @@
     },
     {
         "skill": "html5-plain colored",
-        "title": "HTML5"
+        "title": "Html"
     },
     {
         "skill": "css3-plain colored",
-        "title": "CSS3"
+        "title": "CSS"
     },
     {
         "skill": "sass-original colored",
-        "title": "SASS"
+        "title": "Sass"
     },
     {
         "skill": "bootstrap-plain colored",
-        "title": "BOOTSTRAP"
+        "title": "Bootstrap"
     },
     {
         "skill": "jquery-plain colored",
-        "title": "JQUERY"
+        "title": "Jquery"
     }
 ]

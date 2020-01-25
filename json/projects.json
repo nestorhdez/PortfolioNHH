@@ -13,9 +13,9 @@
     {
         "id": "7",
         "title": "Twitter clone API",
-        "description": "Restful API built in nodejs with express and connected to a mongodb database through mongoose. To be able to sign up and log in I have used JWT authorization. Once you have an account you can search users, follow them, send tweets, like tweets, remove them and delete your own account.",
+        "description": "Restful API built in node with express and connected to a mongodb database through mongoose. To be able to sign up and log in I have used JWT authorization. Once you have an account you can search users, follow them, send tweets, like tweets, remove them and delete your own account.",
         "images": ["/images/tw-clone/clone.png"],
-        "skills": ["nodejs-plain-wordmark colored", "mongodb-plain colored"],
+        "skills": ["nodejs-plain colored", "mongodb-plain colored"],
         "linksToProject": {
             "github": "https://github.com/nestorhdez/twitter-clone-api"
         }

@@ -446,10 +446,7 @@ p {
 }
 
 @media (min-width: 768px) {
-  #skills-container {
-    justify-content: flex-start;
-  }
-  #skills-container .skill-div {
+  .skill-div {
     margin-right: 10px;
   }
 }
