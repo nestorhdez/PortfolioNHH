@@ -11,7 +11,7 @@ const renderProjectImages = (project) => project.images.map(img => htmlProjectIm
 
 const delayBtn = (btn) => {
     btn.disabled = true;
-    setTimeout(() => btn.disabled = false, 400);
+    setTimeout(() => btn.disabled = false, 450);
 }
 
 const imgSlider = (element, xCoord) => {
