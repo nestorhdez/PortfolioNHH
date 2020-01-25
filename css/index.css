@@ -186,14 +186,14 @@ p {
 #title-index {
   position: relative;
   animation-name: name;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-timing-function: ease;
 }
 
 #subtitle-index {
   position: relative;
   animation-name: title;
-  animation-duration: 3s;
+  animation-duration: 1.5s;
   animation-timing-function: ease;
 }
 
