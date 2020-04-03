@@ -20,8 +20,10 @@ const toggleHamburgerMenu = () => {
     }
 }
 
-hamburger.addEventListener('click', toggleHamburgerMenu);
-linksContainer.addEventListener('click', toggleHamburgerMenu);
-window.onscroll = toggleNavColor;
-window.onresize = () => window.innerWidth >= 768 && hamburger.className === 'cross' ?
-    toggleHamburgerMenu() : '';
+export default () => {
+    hamburger.addEventListener('click', toggleHamburgerMenu);
+    linksContainer.addEventListener('click', toggleHamburgerMenu);
+    window.onscroll = toggleNavColor;
+    window.onresize = () => window.innerWidth >= 768 && hamburger.className === 'cross' ?
+        toggleHamburgerMenu() : '';
+}

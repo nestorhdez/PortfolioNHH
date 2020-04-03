@@ -13,6 +13,8 @@ const htmlSkills = (obj) => {
     `);
 }
 
-fetch('./json/skills.json')
-.then((res) => res.json())
-.then((res) => renderSkills(res));
+export default () => {
+    fetch('./json/skills.json')
+    .then((res) => res.json())
+    .then((res) => renderSkills(res));
+}

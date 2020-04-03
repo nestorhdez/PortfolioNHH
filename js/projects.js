@@ -9,20 +9,12 @@ const htmlProjectImages = (img) => `<img class="project-img" data-src="${img}"><
 
 const renderProjectImages = (project) => project.images.map(img => htmlProjectImages(img)).join(' ');
 
-const delayBtn = (btn) => {
-    btn.disabled = true;
-    setTimeout(() => btn.disabled = false, 450);
-}
+const slideImages = (slider, xCoord) =>
+    slider.scrollBy({left: xCoord + slider.offsetWidth, behavior: 'smooth'});
 
-const imgSlider = (element, xCoord) => {
-    const slider = document.querySelector(element);
-    slider.childNodes.forEach(node => node.className && node.className.includes('arrow-img') && delayBtn(node));
-    document.querySelector(element).scrollBy({left: xCoord + slider.offsetWidth, behavior: 'smooth'});
-}
-
-const renderSliderBtns = (project) => (`
-    <button onClick="imgSlider('#project-slider-${project.id}', '-')" class="arrow-img arrow-left"><i class="fas fa-chevron-left"></i></button>
-    <button onClick="imgSlider('#project-slider-${project.id}', '+')" class="arrow-img arrow-right"><i class="fas fa-chevron-right"></i></button>
+const renderSliderBtns = (`
+    <button class="arrow-img arrow-left"><i class="fas fa-chevron-left"></i></button>
+    <button class="arrow-img arrow-right"><i class="fas fa-chevron-right"></i></button>
 `);
 
 const htmlProject = (project) => (`
@@ -45,7 +37,7 @@ const htmlProject = (project) => (`
         </div>
         <div class="project-img-container ${project.id%2 !== 0 ? ' reverse-img' : ''}">
             <div id="project-slider-${project.id}" class="project-images">
-                ${project.images.length > 1 ? renderSliderBtns(project) : ''}
+                ${project.images.length > 1 ? renderSliderBtns : ''}
                 ${renderProjectImages(project)}
             </div>
         </div>
@@ -54,11 +46,25 @@ const htmlProject = (project) => (`
 
 const renderProjects = (projects) => projects.forEach(project => document.querySelector('#projects-container').innerHTML += htmlProject(project));
 
+const setSliderListener = (slider) => {
+    let delay = false;
+
+    slider.addEventListener('click', ({ target: { className } }) => {
+        if(delay) {
+            return;
+        }
+        const direction = className.includes('left') ? '-' : '+';
+        slideImages(slider, direction);
+        delay = true;
+        setTimeout(() => delay = false, 450);
+    });
+}
+
 //Intersection Observer
 
 const intersection = () => {
 
-    const isImage = (node) => node.className == 'project-img';
+    const isImage = ({ tagName }) => tagName === 'IMG';
 
     const setSrcAndAlt = (img) => {
         img.src = img.dataset.src;
@@ -66,12 +72,16 @@ const intersection = () => {
     }
     
     const callback = (entries, observer) => {
-        entries.forEach((entry) => {
-            if(entry.isIntersecting || entry.intersectionRadio > 0){
-                entry.target.childNodes.forEach(child => isImage(child) ? setSrcAndAlt(child) : '');
-                observer.unobserve(entry.target);
+        entries.forEach(({isIntersecting, intersectionRadio, target: slider}) => {
+            if(isIntersecting || intersectionRadio > 0) {
+                slider.childNodes.forEach(child => isImage(child) && setSrcAndAlt(child));
+                observer.unobserve(slider);
+                
+                if(!isImage(slider.children[0])) {
+                    setSliderListener(slider);
+                }
             }
-        })
+        });
     }
     
     const observer = new IntersectionObserver(callback, { rootMargin: '0px 0px -200px 0px' });
@@ -79,12 +89,13 @@ const intersection = () => {
     target.forEach( div => observer.observe(div));
 }
 
-
-fetch('./json/projects.json')
-.then((res) => res.json())
-.then((res) => {
-    renderProjects(res);
-    if(!!window.IntersectionObserver){
-        intersection();
-    }
-});
+export default async () => {
+    fetch('./json/projects.json')
+        .then(res => res.json())
+        .then(res => {
+            renderProjects(res);
+            if(!!window.IntersectionObserver){
+                intersection();
+            }
+        });
+}
