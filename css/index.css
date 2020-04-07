@@ -149,7 +149,7 @@ p {
     display: none;
   }
 }
-#header-bg {
+#header {
   background-image: url("../../images/header-img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -159,20 +159,20 @@ p {
   position: relative;
   display: flex;
 }
-#header-bg #header-text {
+#header #header-text {
   margin: auto;
   padding: 0 35px;
   color: #fff;
   z-index: 1;
 }
-#header-bg #header-text p {
+#header #header-text p {
   font-size: 1.4rem;
 }
-#header-bg #header-text h1 {
+#header #header-text h1 {
   font-size: 2.4rem;
 }
 
-#header-bg::before {
+#header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -226,7 +226,7 @@ p {
   }
 }
 @media (min-width: 768px) {
-  #header-bg h1 {
+  #header h1 {
     font-size: 3rem;
   }
 }

@@ -1,4 +1,4 @@
-#header-bg {
+#header {
     background-image: url("../../images/header-img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,7 +21,7 @@
     }
 }
   
-#header-bg::before {
+#header::before {
     content: '';
     position: absolute;
     top: 0;
@@ -61,9 +61,7 @@
 }
 
 @include breakpoint(768px) {
-    #header-bg {
-        h1 {
-            font-size: 3rem;
-        }
+    #header h1 {
+        font-size: 3rem;
     }
 }
