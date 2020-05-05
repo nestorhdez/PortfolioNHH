@@ -7,6 +7,9 @@ const htmlLinksProject = (project) => (`
 
 const htmlProjectImages = (img) => `<img class="project-img" data-src="${img}"></img>`;
 
+const htmlLoader = 
+    '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
+
 const renderProjectImages = (project) => project.images.map(img => htmlProjectImages(img)).join(' ');
 
 const slideImages = (slider, xCoord) =>
@@ -38,6 +41,9 @@ const htmlProject = (project) => (`
         <div class="project-img-container ${project.id%2 !== 0 ? ' reverse-img' : ''}">
             <div id="project-slider-${project.id}" class="project-images">
                 ${project.images.length > 1 ? renderSliderBtns : ''}
+                <div class="project-img-placeholder">
+                    ${htmlLoader}
+                </div>
                 ${renderProjectImages(project)}
             </div>
         </div>
@@ -70,11 +76,19 @@ const intersection = () => {
         img.src = img.dataset.src;
         img.alt = 'Project-image';
     }
+
+    const getPlaceholder = (slider) => [...slider.children].find(el => el.className === 'project-img-placeholder');
+
+    const delayRemoveChild = (slider) =>
+        setTimeout(() => {
+            slider.removeChild(getPlaceholder(slider));
+        }, 100);
     
     const callback = (entries, observer) => {
         entries.forEach(({isIntersecting, intersectionRadio, target: slider}) => {
             if(isIntersecting || intersectionRadio > 0) {
                 slider.childNodes.forEach(child => isImage(child) && setSrcAndAlt(child));
+                delayRemoveChild(slider);
                 observer.unobserve(slider);
                 
                 if(!isImage(slider.children[0])) {
@@ -84,7 +98,7 @@ const intersection = () => {
         });
     }
     
-    const observer = new IntersectionObserver(callback, { rootMargin: '0px 0px -200px 0px' });
+    const observer = new IntersectionObserver(callback, { rootMargin: '0px 0px -250px 0px' });
     const target = document.querySelectorAll('.project-images');
     target.forEach( div => observer.observe(div));
 }
