@@ -82,7 +82,7 @@ const intersection = () => {
     const delayRemoveChild = (slider) =>
         setTimeout(() => {
             slider.removeChild(getPlaceholder(slider));
-        }, 100);
+        }, 200);
     
     const callback = (entries, observer) => {
         entries.forEach(({isIntersecting, intersectionRadio, target: slider}) => {
