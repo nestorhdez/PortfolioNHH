@@ -1,6 +1,5 @@
 :root {
   --opacity-header: 0.5;
-  --bg-navbar: transparent;
   --white-black: #fff;
   --black-white: #111;
   --blue-white: #111216;
@@ -456,6 +455,7 @@ input:checked + .slider:before {
 }
 
 .link-underline {
+  color: var(--black-white);
   text-decoration: underline;
 }
 
