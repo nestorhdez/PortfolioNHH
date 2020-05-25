@@ -1,12 +1,20 @@
 //CSS variables
 :root {
     --opacity-header: 0.5;
-    --bg-navbar: transparent;
+    
+    // Theme switch colors
+    --white-black: #fff;
+    --black-white: #111;
+    --blue-white: #111216;
+    --white-blue: #fff;
+    --black-blue: #111;
+    --transparent-gray: transparent;
 }
 
 //Colors
 $primary-color: #111;
-$primary-font-color: #fff;
+$secondary-color: #111216;
+$third-color: #fff;
 
 //Fonts
 $primary-font: 'Open Sans', sans-serif;

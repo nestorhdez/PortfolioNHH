@@ -5,18 +5,16 @@ const { root, navbar, hamburger, linksContainer } = {
     linksContainer: document.querySelector('#nav-links-container')
 }
 
-const toggleNavColor = () => {
+const toggleNavColor = () =>
     root.scrollTop > 100 || hamburger.className === 'cross' ? 
-        root.style.setProperty('--bg-navbar', '#111') :
-        root.style.setProperty('--bg-navbar', 'transparent');
-}
+        navbar.classList.add('show') : navbar.classList.remove('show');
 
 const toggleHamburgerMenu = () => {
     if(window.innerWidth < 768 || hamburger.className === 'cross') {
         navbar.classList.toggle('open');
         linksContainer.classList.toggle('show');
         hamburger.classList.toggle('cross');
-        toggleNavColor();
+        setTimeout(toggleNavColor, 300);
     }
 }
 

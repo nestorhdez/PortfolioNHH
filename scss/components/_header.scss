@@ -10,13 +10,16 @@
     #header-text {
         margin: auto;
         padding: 0 35px;
-        color: $primary-font-color;
+        color: $primary-color;
         z-index: 1;
         p {
             font-size: 1.4rem;
         }
         h1 {
             font-size: 2.4rem;
+        }
+        h1, p {
+          color: $third-color;  
         }
     }
 }

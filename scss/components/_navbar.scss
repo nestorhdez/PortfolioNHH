@@ -1,3 +1,5 @@
+@import 'theme-switch';
+
 #navbar-container {
     display: flex;
     flex-direction: column;
@@ -7,16 +9,14 @@
     height: 64px;
     padding: 1rem 3rem;
     z-index: 99;
-    background-color: var(--bg-navbar);
-    transition: background-color .7s ease, height .7s;
     overflow: hidden;
     .nav-link {
-        color: $primary-font-color;
+        color: $third-color;
         font-size: 1.1rem;
     }
     #name-navbar {
         width: 45px;
-        color: $primary-font-color;
+        color: $third-color;
         font-size: 1.7rem;
         font-family: $secondary-font;
     }
@@ -24,6 +24,12 @@
 
 #navbar-container.open {
     height: 100vh;
+}
+
+#navbar-container.show {
+    background-color: var(--black-blue);
+    border-bottom: 1px solid var(--transparent-gray);
+    transition: background-color .7s ease, height .7s, border-bottom .7s;
 }
 
 #nav-links-container {
@@ -73,7 +79,7 @@
     border: none;
     transform: scale(0.6);
     div {
-        background-color: $primary-font-color;
+        background-color: $third-color;
         margin-bottom: 6px;
         width: 45px;
         height: 7px;

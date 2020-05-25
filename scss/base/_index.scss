@@ -5,7 +5,13 @@ html {
 	padding: 0;
 	box-sizing: border-box;
 	font-family: $primary-font;
+	color: var(--black-white);
 }
+
+body {
+	background-color: var(--white-blue);
+}
+
 a {
 	text-decoration: none;
 	color: $primary-color;

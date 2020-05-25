@@ -58,6 +58,9 @@
 .project__link {
     font-size: 1.3rem;
     margin-right: 30px;
+    i {
+        color: var(--black-white);
+    }
 }
 .link-underline {
     text-decoration: underline;
@@ -95,7 +98,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #225271;
+    background-color: var(--blue-white);
 }
 .arrow-img {
     position: absolute;
@@ -109,6 +112,9 @@
     transition-duration: .5s;
     &:active {
         background-color: rgba(0, 0, 0, 0.3);
+    }
+    i {
+        color: $secondary-color;
     }
 }
 .arrow-left {
