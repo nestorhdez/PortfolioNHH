@@ -1,0 +1,50 @@
+.project-video {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  background-color: $primary-color;
+}
+
+video {
+  height: 279px;
+}
+
+.play, .pause {
+  position: absolute;
+  display: inline-block;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  i {
+      font-size: 60px;
+      color: $primary-color;
+  }
+}
+
+.pause {
+  opacity: 0;
+  transition-duration: .4s;
+}
+
+.project-video:hover .pause {
+  opacity: 1;
+}
+
+@include breakpoint(500px) {
+  .project-img-container {
+      width: 416px;
+  }
+}
+
+@include breakpoint(1080px) {
+  video {
+      height: 330px;
+  }
+}
