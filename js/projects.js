@@ -102,7 +102,7 @@ const intersection = () => {
     });
   }
     
-  const observer = new IntersectionObserver(callback, { rootMargin: '0px 0px -150px 0px' });
+  const observer = new IntersectionObserver(callback, { rootMargin: '0px 0px -60px 0px' });
   const target = document.querySelectorAll('.project-images');
   target.forEach( div => observer.observe(div));
 }
