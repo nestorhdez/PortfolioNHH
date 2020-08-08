@@ -68,6 +68,13 @@
 }
 .description-container {
     margin-top: 10px;
+    ul {
+        list-style-position: inside;
+        margin-top: 15px;
+    }
+    li {
+        margin-bottom: 10px;
+    }
 }
 .project__icons {
     padding: 10px 0;

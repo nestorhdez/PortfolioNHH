@@ -1,4 +1,4 @@
-const thumbnailIcon = (string) => `<i class="thumbnail-icon devicon-${string}"></i>`;
+const thumbnailIcon = (string) => `<i class="thumbnail-icon devicon-${string}" title="${string.split('-')[0]}"></i>`;
 
 const htmlLinksProject = (project) => (`
   ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" class="project__link" target="_blank"><i class="fab fa-github"></i></a>` : ''}
@@ -102,7 +102,7 @@ const intersection = () => {
     });
   }
     
-  const observer = new IntersectionObserver(callback, { rootMargin: '0px 0px -250px 0px' });
+  const observer = new IntersectionObserver(callback, { rootMargin: '0px 0px -150px 0px' });
   const target = document.querySelectorAll('.project-images');
   target.forEach( div => observer.observe(div));
 }
