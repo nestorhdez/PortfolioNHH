@@ -105,10 +105,12 @@ const setSliderListener = (slider) => {
       return;
     }
 
-    const direction = className.includes('left') ? '-' : '+';
-    slideImages(slider, direction);
-    delay = true;
-    setTimeout(() => delay = false, 450);
+    if(className.includes('left') || className.includes('right')){
+      const direction = className.includes('left') ? '-' : '+';
+      slideImages(slider, direction);
+      delay = true;
+      setTimeout(() => delay = false, 450);
+    }
   });
 }
 
