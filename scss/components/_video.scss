@@ -38,8 +38,10 @@ video {
   transition-duration: .4s;
 }
 
-.project-video:hover .pause {
-  opacity: 1;
+@media(any-hover: hover){
+  .project-video:hover .pause {
+    opacity: 1;
+  }
 }
 
 @include breakpoint(500px) {
@@ -53,23 +55,3 @@ video {
       height: 330px;
   }
 }
-
- /* Hidden by default, selectively shown. 
-  At this point this is how a skin designer would show them. */
-.video-js .vjs-current-time { display: block; }
-.video-js .vjs-time-divider { display: block; }
-.video-js .vjs-duration { display: block; }
-.video-js .vjs-mute-control { display: block; }
-.video-js .vjs-volume-control { display: block; }
-
-/* Could be broken. Can't find what's supposed to show it now */
-.video-js .vjs-live-control { display: block; }
-
-/* Programmatically hidden with vjs-hidden when no tracks */
-.video-js .vjs-chapters-button { display: block !important; }
-.video-js .vjs-subtitles-button { display: block !important; }
-.video-js .vjs-captions-button { display: block !important; }
-
-/* Hidden with state classes */
-.video-js .vjs-control-bar { display: flex; }
-.video-js.vjs-has-started .vjs-big-play-button { display: block; }
