@@ -12,6 +12,7 @@
 
 video {
   height: 279px;
+  display: none;
 }
 
 .play, .pause {
@@ -23,9 +24,13 @@ video {
   cursor: pointer;
   border-radius: 50%;
   i {
-      font-size: 60px;
+      font-size: 50px;
       color: $primary-color;
   }
+}
+
+.pause {
+  display: none;
 }
 
 .pause {
