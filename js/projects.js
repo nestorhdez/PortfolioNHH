@@ -13,7 +13,7 @@ const htmlLoader =
 const renderProjectImages = (project) => project.images.map(img => htmlProjectImages(img)).join(' ');
 
 const renderProjectVideo = (video) => (`
-  <video preload="none" muted loop>
+  <video preload="none" muted loop playsinline>
     <source src="${video}" type="video/mp4">
     Your browser does not support HTML video.
   </video>
