@@ -338,7 +338,7 @@ input:checked + .slider:before {
 }
 
 video {
-  height: 279px;
+  height: 226px;
   display: none;
 }
 
@@ -370,8 +370,8 @@ video {
 }
 
 @media (min-width: 500px) {
-  .project-img-container {
-    width: 416px;
+  video {
+    height: 279px;
   }
 }
 @media (min-width: 1080px) {
@@ -531,7 +531,7 @@ video {
 .project-img-container {
   position: relative;
   width: 100%;
-  height: 279px;
+  height: 226px;
   border-radius: 15px;
   box-shadow: 4px 2px 13px 1px rgba(0, 0, 0, 0.3);
 }
@@ -601,6 +601,7 @@ video {
 @media (min-width: 500px) {
   .project-img-container {
     width: 416px;
+    height: 279px;
   }
 
   .arrow-img {

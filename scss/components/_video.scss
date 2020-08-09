@@ -11,7 +11,7 @@
 }
 
 video {
-  height: 279px;
+  height: 226px;
   display: none;
 }
 
@@ -43,8 +43,8 @@ video {
 }
 
 @include breakpoint(500px) {
-  .project-img-container {
-      width: 416px;
+  video {
+      height: 279px;
   }
 }
 
