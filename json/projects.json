@@ -1,6 +1,6 @@
 [
     {
-        "id": "8",
+        "id": "9",
         "title": "Twitter clone",
         "description": "Single page application done with Vue.js and Vuex (state management). The user is able to create a profile, log in, follow users, search users and write, like  and search tweets. It consists of five views: Log in/log out, timeline, search engine, tweet writer and users profile. It has been developed focused on mobile, and adapting it to wider screens.",
         "images": ["/images/twitter/thumbnail.jpg"],
@@ -12,13 +12,23 @@
         }
     },
     {
-        "id": "7",
+        "id": "8",
         "title": "Twitter clone API",
         "description": "Restful API built in node with express and connected to a mongodb database through mongoose. To be able to sign up and log in I have used JWT authorization. Once you have an account you can search users, follow them, send tweets, like tweets, remove them and delete your own account.",
         "images": ["/images/tw-clone/clone.png"],
         "skills": ["nodejs-plain colored", "mongodb-plain colored"],
         "linksToProject": {
             "github": "https://github.com/nestorhdez/twitter-clone-api"
+        }
+    },
+    {
+        "id": "7",
+        "title": "Bus stop google assistant action",
+        "description": "Google action to check the time it’s going to take the next bus to arrive to a specific bus stop. It consists of two difference Netlify Lambda functions: <ul><li> Action lambda, which setup the webhook client to process the questions and answers through google assistant and make the request to get the bus stop information.</li><li> Bus stop lambda, which returns the information based on the bus stop number and line received.</li></ul>",
+        "images": ["/images/guagua/guagua-desktop.jpg", "/images/guagua/mobile.jpg"],
+        "skills": ["nodejs-plain colored"],
+        "linksToProject": {
+            "github": "https://github.com/nestorhdez/guaguas"
         }
     },
     {

@@ -1,4 +1,4 @@
-const thumbnailIcon = (string) => `<i class="thumbnail-icon devicon-${string}"></i>`;
+const thumbnailIcon = (string) => `<i class="thumbnail-icon devicon-${string}" title="${string.split('-')[0]}"></i>`;
 
 const htmlLinksProject = (project) => (`
   ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" class="project__link" target="_blank"><i class="fab fa-github"></i></a>` : ''}

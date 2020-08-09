@@ -516,6 +516,13 @@ video {
 .description-container {
   margin-top: 10px;
 }
+.description-container ul {
+  list-style-position: inside;
+  margin-top: 15px;
+}
+.description-container li {
+  margin-bottom: 10px;
+}
 
 .project__icons {
   padding: 10px 0;
