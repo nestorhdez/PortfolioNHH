@@ -3,7 +3,7 @@ const toggle = document.getElementById('theme-switcher');
 
 const colors = {
   white: '#fff',
-  blue: '#111216',
+  blue: '#121d28',
   black: '#111',
   gray: '#373c41',
   transparent: 'transparent'

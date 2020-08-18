@@ -2,7 +2,7 @@
   --opacity-header: 0.5;
   --white-black: #fff;
   --black-white: #111;
-  --blue-white: #111216;
+  --blue-white: #121d28;
   --white-blue: #fff;
   --black-blue: #111;
   --transparent-gray: transparent;
@@ -65,7 +65,7 @@ p {
   width: 15px;
   left: 2px;
   bottom: 2px;
-  background-color: #111216;
+  background-color: #121d28;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -578,7 +578,7 @@ video {
   background-color: rgba(0, 0, 0, 0.3);
 }
 .arrow-img i {
-  color: #111216;
+  color: #121d28;
 }
 
 .arrow-left {
