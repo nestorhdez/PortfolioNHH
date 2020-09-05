@@ -84,9 +84,9 @@ const setSliderListener = (slider) => {
       return;
     }
 
-    if(className.includes('pause') || className.includes('play')){
-      const [play, pause, thumbnail, video] = slider.children;
-
+    const [play, pause, thumbnail, video] = slider.children;
+    
+    if(video && video.tagName === 'VIDEO'){
       if(thumbnail.style.display !== "none") {
         thumbnail.style.display = "none";
         video.style.display = "initial";
@@ -118,7 +118,7 @@ const setSliderListener = (slider) => {
 
 const intersection = () => {
 
-  const isMedia = ({ tagName }) => tagName === 'IMG' || tagName === 'VIDEO';
+  const isImg = ({ tagName }) => tagName === 'IMG';
 
   const setSrcAndAlt = (media) => {
     if(media.dataset.src){
@@ -141,11 +141,11 @@ const intersection = () => {
   const callback = (entries, observer) => {
     entries.forEach(({isIntersecting, intersectionRadio, target: slider}) => {
       if(isIntersecting || intersectionRadio > 0) {
-        slider.childNodes.forEach(child => isMedia(child) && setSrcAndAlt(child));
+        slider.childNodes.forEach(child => isImg(child) && setSrcAndAlt(child));
         delayRemoveChild(slider);
         observer.unobserve(slider);
         
-        if(!isMedia(slider.children[0])) {
+        if(!isImg(slider.children[0])) {
           setSliderListener(slider);
         }
       }
