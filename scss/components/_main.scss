@@ -37,7 +37,7 @@
 
 // Projects //
 .project {
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 .project__title {
     font-size: 1.4rem;
@@ -84,7 +84,7 @@
     position: relative;
     width: 100%;
     height: 226px;
-    border-radius: 15px;
+    border-radius: 4px;
     box-shadow: 4px 2px 13px 1px rgba(0, 0, 0, 0.3);
 }
 .project-images {
@@ -93,7 +93,7 @@
     height: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
-    border-radius: 15px;
+    border-radius: 4px;
 }
 
 .project-img {
