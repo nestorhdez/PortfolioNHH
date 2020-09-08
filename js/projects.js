@@ -1,8 +1,8 @@
 const thumbnailIcon = (string) => `<i class="thumbnail-icon devicon-${string}" title="${string.split('-')[0]}"></i>`;
 
 const htmlLinksProject = (project) => (`
-  ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" class="project__link" target="_blank"><i class="fab fa-github"></i></a>` : ''}
-  ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" class="project__link" target="_blank"><i class="fas fa-link"></i></a>` : ''}
+  ${project.linksToProject.github ?  `<a title="Github" href="${project.linksToProject.github}" class="project__link" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>` : ''}
+  ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" class="project__link" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>` : ''}
 `);
 
 const htmlProjectImages = (img) => `<img class="project-img" data-src="${img}"></img>`;
