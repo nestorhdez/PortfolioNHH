@@ -5,7 +5,7 @@ const htmlLinksProject = (project) => (`
   ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" class="project__link" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>` : ''}
 `);
 
-const htmlProjectImages = (img) => `<img class="project-img" data-src="${img}"></img>`;
+const htmlProjectImages = (img) => `<img class="project-img" data-src="${img}" atl="Project image"></img>`;
 
 const htmlLoader = 
   '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
@@ -25,17 +25,17 @@ const slideImages = (slider, xCoord) =>
 const renderMediaBtns = (video, images) => {
   if(video){
     return (`
-      <button class="play">
+      <button class="play" aria-label="Play video button">
         <i class="far fa-play-circle" ${video.light ? 'style="color: white"' : ''}></i>
       </button>
-      <button class="pause">
+      <button class="pause" aria-label="Stop video button">
         <i class="far fa-pause-circle pause-icon" ${video.light ? 'style="color: white"' : ''}></i>
       </button>
     `)
   } else if(images.length > 1){
     return (`
-      <button class="arrow-img arrow-left"><i class="fas fa-chevron-left"></i></button>
-      <button class="arrow-img arrow-right"><i class="fas fa-chevron-right"></i></button>
+      <button class="arrow-img arrow-left" aria-label="Previous image button"><i class="fas fa-chevron-left"></i></button>
+      <button class="arrow-img arrow-right" aria-label="Next image button"><i class="fas fa-chevron-right"></i></button>
     `)
   }
   return '';
