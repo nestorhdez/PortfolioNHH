@@ -22,11 +22,15 @@ const renderProjectVideo = (video) => (`
 const slideImages = (slider, xCoord) =>
   slider.scrollBy({left: xCoord + slider.offsetWidth, behavior: 'smooth'});
 
-const renderMediaBtns = ({video, images}) => {
+const renderMediaBtns = (video, images) => {
   if(video){
     return (`
-      <button class="play"><i class="far fa-play-circle"></i></button>
-      <button class="pause"><i class="far fa-pause-circle pause-icon"></i></button>
+      <button class="play">
+        <i class="far fa-play-circle" ${video.light ? 'style="color: white"' : ''}></i>
+      </button>
+      <button class="pause">
+        <i class="far fa-pause-circle pause-icon" ${video.light ? 'style="color: white"' : ''}></i>
+      </button>
     `)
   } else if(images.length > 1){
     return (`
@@ -40,12 +44,12 @@ const renderMediaBtns = ({video, images}) => {
 const renderMedia = (project) => {
   return `
     <div id="project-slider-${project.id}" class="${project.video ? 'project-video' : 'project-images'}">
-      ${renderMediaBtns(project)}
+      ${renderMediaBtns(project.video, project.images)}
       <div class="project-img-placeholder">
         ${htmlLoader}
       </div>
       ${renderProjectImages(project)}
-      ${project.video ? renderProjectVideo(project.video) : ''}
+      ${project.video ? renderProjectVideo(project.video.path) : ''}
     </div>
   `
 }

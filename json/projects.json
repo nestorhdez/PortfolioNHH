@@ -4,7 +4,10 @@
         "title": "Twitter clone",
         "description": "Single page application done with Vue.js and Vuex (state management). The user is able to create a profile, log in, follow users, search users and write, like  and search tweets. It consists of five views: Log in/log out, timeline, search engine, tweet writer and users profile. It has been developed focused on mobile, and adapting it to wider screens.",
         "images": ["/images/twitter/thumbnail.jpg"],
-        "video": "/videos/twitter/twitter.mp4",
+        "video": {
+            "path": "/videos/twitter/twitter.mp4",
+            "light": false
+        },
         "skills": ["vuejs-plain colored"],
         "linksToProject": {
             "github": "https://github.com/nestorhdez/twitter-clone",
@@ -35,7 +38,11 @@
         "id": "6",
         "title": "Marvel comics searcher",
         "description": "Vue.js project that fetch data from the marvels API, let you make a search of a comic and give you some detail information. It consists of two views: home and detail. <br>Trying to make the code easy to understand and maintain, I have focused on writing reusable and independent components.",
-        "images": ["/images/marvel/home.png"],
+        "images": ["/images/marvel/thumbnail.png"],
+        "video": {
+            "path": "/videos/marvel/marvel.mp4",
+            "light": true
+        },
         "skills": ["vuejs-plain colored"],
         "linksToProject": {
             "github": "https://github.com/nestorhdez/marvel",
