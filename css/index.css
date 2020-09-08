@@ -676,6 +676,11 @@ video {
   justify-content: center;
   align-items: center;
   font-size: 3.8rem;
+  transition: all 0.3s ease;
+}
+#skills-container .skill-div .skill-icon:hover {
+  transform: scale(1.04);
+  box-shadow: 15px 5px 40px -1px rgba(0, 0, 0, 0.21);
 }
 #skills-container .skill-div .skill-title {
   font-weight: bold;

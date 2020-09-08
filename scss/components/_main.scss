@@ -217,7 +217,14 @@
             justify-content: center;
             align-items: center;
             font-size: 3.8rem;
+            transition: all .3s ease;
         }
+
+        .skill-icon:hover{
+            transform: scale(1.04);
+            box-shadow: 15px 5px 40px -1px rgba(0,0,0,.21);
+        }
+
         .skill-title {
             font-weight: bold;
             font-size: 1rem;
