@@ -4,16 +4,16 @@
         "title": "Javascript"
     },
     {
+        "skill": "typescript-plain colored",
+        "title": "TypeScript"
+    },
+    {
         "skill": "vuejs-plain colored",
         "title": "Vue"
     },
     {
         "skill": "nodejs-plain colored",
         "title": "Node"
-    },
-    {
-        "skill": "typescript-plain colored",
-        "title": "TypeScript"
     },
     {
         "skill": "git-plain colored",
