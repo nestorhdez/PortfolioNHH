@@ -38,7 +38,7 @@
         "id": "6",
         "title": "Marvel comics searcher",
         "description": "Vue.js project that fetch data from the marvels API, let you make a search of a comic and give you some detail information. It consists of two views: home and detail. <br>Trying to make the code easy to understand and maintain, I have focused on writing reusable and independent components.",
-        "images": ["/images/marvel/thumbnail.png"],
+        "images": ["/images/marvel/home.png"],
         "video": {
             "path": "/videos/marvel/marvel.mp4",
             "light": true
