@@ -5,7 +5,7 @@ const htmlLinksProject = (project) => (`
   ${project.linksToProject.web ?  `<a title="Web site" href="${project.linksToProject.web}" class="project__link" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i></a>` : ''}
 `);
 
-const htmlProjectImages = (img) => `<img class="project-img" data-src="${img}" atl="Project image"></img>`;
+const htmlProjectImages = (img) => `<img class="project-img" data-src="${img}" alt="Project image"></img>`;
 
 const htmlLoader = 
   '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
