@@ -30,7 +30,7 @@ const switchTheme = () => {
   }
 }
 
-export default () => {
+(() => {
   switchTheme();
   toggle.addEventListener('change', switchTheme);
-}
+})();
