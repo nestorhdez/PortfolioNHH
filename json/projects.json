@@ -1,6 +1,6 @@
 [
     {
-        "id": "9",
+        "id": "8",
         "title": "Twitter clone",
         "description": "Single page application done with Vue.js and Vuex (state management). The user is able to create a profile, log in, follow users, search users and write, like  and search tweets. It consists of five views: Log in/log out, timeline, search engine, tweet writer and users profile. It has been developed focused on mobile, and adapting it to wider screens.",
         "images": ["/images/twitter/thumbnail.jpg"],
@@ -15,7 +15,7 @@
         }
     },
     {
-        "id": "8",
+        "id": "7",
         "title": "Twitter clone API",
         "description": "Restful API built in node with express and connected to a mongodb database through mongoose. To be able to sign up and log in I have used JWT authorization. Once you have an account you can search users, follow them, send tweets, like tweets, remove them and delete your own account.",
         "images": ["/images/tw-clone/clone.png"],
@@ -25,7 +25,7 @@
         }
     },
     {
-        "id": "7",
+        "id": "6",
         "title": "Bus stop google assistant action",
         "description": "Google action to check the time it’s going to take the next bus to arrive to a specific bus stop. It consists of two difference Netlify Lambda functions: <ul><li> Action lambda, which setup the webhook client to process the questions and answers through google assistant and make the request to get the bus stop information.</li><li> Bus stop lambda, which returns the information based on the bus stop number and line received.</li></ul>",
         "images": ["/images/guagua/mobile.jpg"],
@@ -35,7 +35,7 @@
         }
     },
     {
-        "id": "6",
+        "id": "5",
         "title": "Marvel comics searcher",
         "description": "Vue.js project that fetch data from the marvels API, let you make a search of a comic and give you some detail information. It consists of two views: home and detail. <br>Trying to make the code easy to understand and maintain, I have focused on writing reusable and independent components.",
         "images": ["/images/marvel/home.png"],
@@ -50,22 +50,6 @@
         }
     },
     {
-        "id": "5",
-        "title": "Curriculum management",
-        "description": "Group project carried out with git flow and scrum as keys for the organization. The goal was to make a web with the aim of manage curriculums of people and companies. <br> The tasks I did were the following: <br><br> Both, in the profiles and companies pages, I made the request to the API and considering the asynchrony I had to render cards with certain information. Then, depending where do you click you can open a modal with all the information of the profile, edit or delete it. <br><br> Another task was to made the logic to be able to search by filtering the profiles according to the filled inputs.<br><br>Finally, I had to make a landing page for potential interested companies. <br><br>  You can see the code made by me on Github: <br> <span class=\"section-subtitle\"><a target:\"_blank\" rel=\"noopener noreferrer\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/model.js\">/js/model.js<a/>, <a target:\"_blank\" rel=\"noopener noreferrer\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/features-model.js\">/js/features-model.js</a>, <a target:\"_blank\" rel=\"noopener noreferrer\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/render.js\">/js/render.js</a> and <a target:\"_blank\" rel=\"noopener noreferrer\" class=\"link-underline\" href=\"https://github.com/nestorhdez/CV-Web/blob/master/js/companies.js\">/js/companies.js</a> (class Companies).</span>",
-        "images": ["/images/cv/cv-web-landing-page.png"],
-        "skills": [
-            "html5-plain colored",
-            "bootstrap-plain colored",
-            "css3-plain colored",
-            "javascript-plain colored"
-        ],
-        "linksToProject": {
-            "github": "https://github.com/nestorhdez/CV-Web",
-            "web": "https://nestorhdez.github.io/CV-Web/"
-        }
-    }
-    ,{
         "id": "4",
         "title": "Front-end Libraries Certification",
         "description": "To achieve this <a class=\"link-underline\" target='_blank' href=\"https://learn.freecodecamp.org/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/\">certification</a> you are free to use any front-end libraries. I decided to use React because it's the one I'm most interested in at this moment. <br><br> The first project, random quote machine, has to fetch a phrase and its author asynchronously. You have the option to generate a new phrase or tweet the current one. <br><br> The Markdown previewer must print the text written as markdown in the editor container as html in the preview container.",
