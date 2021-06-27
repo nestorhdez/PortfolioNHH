@@ -145,6 +145,9 @@ input:checked + .slider:before {
 #navbar-container.transparent #name-navbar, #navbar-container.transparent .nav-link {
   color: #111;
 }
+#navbar-container.transparent #menu-hamb div {
+  background-color: #111;
+}
 
 #nav-links-container {
   width: 100%;
