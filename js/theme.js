@@ -1,5 +1,6 @@
 const root = document.documentElement;
 const toggle = document.getElementById('theme-switcher');
+const navbar = document.querySelector('#navbar-container');
 
 const colors = {
   white: '#fff',
@@ -22,15 +23,10 @@ const cssVariables = [
   '--transparent-gray'
 ];
 
-const switchTheme = () => {
+export const switchTheme = () => {
   for (const cssVar of cssVariables) {
     // Split variable into the two colors and get the 1st or 2nd
     const color = cssVar.split( /[^A-Za-z]/g ).filter(Boolean)[+toggle.checked];
     switchColor(cssVar, colors[color]);
   }
 }
-
-(() => {
-  switchTheme();
-  toggle.addEventListener('change', switchTheme);
-})();

@@ -32,6 +32,12 @@
     transition: background-color .7s ease, height .7s, border-bottom .7s;
 }
 
+#navbar-container.transparent {
+    #name-navbar, .nav-link {
+        color: $primary-color;
+    }
+}
+
 #nav-links-container {
     width: 100%;
     text-align: center;

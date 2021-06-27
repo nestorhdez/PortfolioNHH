@@ -1,38 +1,21 @@
 #header {
-    background-image: url("../../images/header-img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
     height: 100vh;
-    background-color: black;
     position: relative;
     display: flex;
     #header-text {
         margin: auto;
-        padding: 0 35px;
+        padding: 0 32px;
         color: $primary-color;
         z-index: 1;
         p {
-            font-size: 1.4rem;
+            font-size: 2.4rem;
+            font-weight: 600;
         }
         h1 {
-            font-size: 2.4rem;
-        }
-        h1, p {
-          color: $third-color;  
+            font-size: 3.2rem;
+            font-weight: 700;
         }
     }
-}
-  
-#header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    opacity: var(--opacity-header);
 }
 
 #title-index {
