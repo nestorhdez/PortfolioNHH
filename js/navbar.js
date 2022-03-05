@@ -9,7 +9,7 @@ const { root, navbar, hamburger, linksContainer, toggle } = {
 }
 
 const toggleNavColor = () => {
-    const scrollOrMobile = root.scrollTop > 100 || hamburger.className === 'cross';
+    const scrollOrMobile = root.scrollTop > 20 || hamburger.className === 'cross';
     const isLightTheme = !toggle.checked;
 
     if(scrollOrMobile) {
