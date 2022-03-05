@@ -1,19 +1,27 @@
 [
     {
-        "skill": "javascript-plain colored",
-        "title": "Javascript"
-    },
-    {
         "skill": "typescript-plain colored",
         "title": "TypeScript"
+    },
+    {
+        "skill": "nodejs-plain colored",
+        "title": "Node"
     },
     {
         "skill": "vuejs-plain colored",
         "title": "Vue"
     },
     {
-        "skill": "nodejs-plain colored",
-        "title": "Node"
+        "skill": "express-original colored",
+        "title": "Express"
+    },
+    {
+        "skill": "react-original colored",
+        "title": "React"
+    },
+    {
+        "skill": "jest-plain colored",
+        "title": "Jest"
     },
     {
         "skill": "git-plain colored",
@@ -24,12 +32,20 @@
         "title": "Mongodb"
     },
     {
-        "skill": "react-original colored",
-        "title": "React (Basic)"
+        "skill": "azure-plain colored",
+        "title": "Azure"
+    },
+    {
+        "skill": "bash-plain colored",
+        "title": "Bash"
     },
     {
         "skill": "docker-plain colored",
-        "title": "Docker (Basic)"
+        "title": "Docker"
+    },
+    {
+        "skill": "storybook-plain colored",
+        "title": "Storybook"
     },
     {
         "skill": "html5-plain colored",
@@ -42,13 +58,5 @@
     {
         "skill": "sass-original colored",
         "title": "Sass"
-    },
-    {
-        "skill": "bootstrap-plain colored",
-        "title": "Bootstrap"
-    },
-    {
-        "skill": "jquery-plain colored",
-        "title": "Jquery"
     }
 ]
